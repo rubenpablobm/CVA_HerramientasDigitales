@@ -1,94 +1,100 @@
-   h3 {
-     color: #000;
-   }
-   .text{
-       /* color: #000; */
-       text-align: center;
-   }
-   
-   .folded-corner:hover .text{
-       visibility: visible;
-       color: #fff;;
-   }
+/* Código por Anand Vunnam
+https://bbbootstrap.com/snippets/bootstrap-5-stacking-cards-transition-effects-28123363 */
 
-   .Services-tab{
-       margin-top:80px;
-   }
-   
-   /*
-     nav link items
-   */
-   .folded-corner{
-     padding: 60px 30px;
-     position: relative;
-     font-size: 100%;
-     text-decoration: none;
-     color: #999; 
-     background: transparent;
-     transition: all ease .5s;
-     border: 1px solid gray;
-   }
+::-webkit-scrollbar{
+  width: 10px;
+}
 
-   .folded-corner:hover{
-        color: #fff;
-        background-color: #093b8ba7;
-   }
-   
-   /*
-     paper fold corner
-   */
-   
-   .folded-corner:before {
-     content: "";
-     position: absolute;
-     top: 0;
-     right: 0;
-     border-style: solid;
-     border-width: 0 0px 0px 0;
-     border-color: #ddd #000;
-     transition: all ease .3s;
-   }
-   
-   /*
-     on li hover make paper fold larger
-   */
-   .folded-corner:hover:before {
-        background-color: #D00003;
-        border-width: 0 50px 50px 0;
-        border-color: #eee #000;
-        color: #fff
-   }
-   
-   .service_tab_1{
-       background-color: #fff;
-   }
-   .service_tab_1:hover .fa-icon-image{
-       color: #fff;
-       transform:  scale(1.5);
-   }
+::-webkit-scrollbar-thumb{
+  width: 8px;
+  background-color: #636363;
+  border-radius: 10px;
+}
 
-   .service_tab_1:hover .text{   
-        color: #fff;
-   }
+.container{
+  width: 800px;
+  min-height: 520px;
+}
 
-   .service_tab_1:hover .content{
-        color: #fff
-   }
-   
-   
-   .fa-icon-image{ 
-       color: #093B8B; 
-       display: inline-block; 
-       font-style: normal;
-       font-variant: normal;
-       font-weight: normal;
-       line-height: 1;
-       font-size-adjust: none;
-       font-stretch: normal;
-       text-rendering: auto;
-       transition: all .65s linear 0s;
-       text-align: center;
-       transition: all 1s cubic-bezier(.99,.82,.11,1.41);
-   }
-   
-   
+.container .card{
+  top: calc(50% - 190px);
+  left: 50%;
+  transform: translate(-50%,calc(50px*var(--i))) rotate(40deg) skew(-20deg,-10deg);
+  width: 260px;
+  height: 380px;
+  border: none;
+  box-shadow: 0 5px 12px #1111112d;
+  z-index: calc(-1 * var(--i));
+  transition: all 0.5s;
+}
+
+.container .card:nth-child(1){
+  opacity: 0.9;
+}
+.container .card:nth-child(2){
+  opacity: 0.8;
+}
+.container .card:nth-child(3){
+  opacity: 0.5;
+}
+
+.container:hover .card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + calc(300px * var(--i))),-50%) rotate(0deg) skew(0deg,0deg);
+  opacity: 1;
+  z-index: 1;
+}
+
+.container .card .cardbody{
+  color: #444;
+  opacity: 0;
+  transition:all 0.5s;
+  transform: translateY(50px);
+  padding: 25px;
+  pointer-events: none;
+}
+
+.container:hover .card .cardbody{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media(max-width: 991.5px){
+  .container:hover .card{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,calc(-50% + calc(400px * var(--j)))) rotate(0deg) skew(0deg,0deg);
+      opacity: 1;
+      z-index: 1;
+  }
+}
+
+@media (max-width:576px) {
+  .container{
+      width: 300px;
+  }
+  .container .card{
+      height: 280px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container{
+      width: 100px;
+      min-height: 300px;
+  }
+
+  .container .card{
+      width: 150px;
+      height: 180px;
+  }
+
+  .container:hover .card{
+      width: 260px;
+      height: 280px;
+      transform: translate(-50%,calc(-50% + calc(320px * var(--j)))) rotate(0deg) skew(0deg,0deg);
+  }
+}
