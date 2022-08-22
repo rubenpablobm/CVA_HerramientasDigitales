@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>Practicando Python | CVA - Centro Virtual de Aprendizaje</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+    <link href="../../assets/css/hover-buttons.css" rel="stylesheet" />
+    <link href="../../assets/css/vocabulary.css" rel="stylesheet" />
+    <style rel="stylesheet" type="text/css">
+
+      .subtitle-accent {
+          font-weight: 700 !important;
+          margin-top: 1px;
+          color: #55a2fe !important;
+          font-size: 15px !important;
+      }
+
+      svg.fa-play-circle {
+          width: 4rem;
+          height: 4rem;
+          fill: var(--accent-color);
+      }
+
+      .box {
+          max-height: 180px;
+          height: auto;
+          width: auto;
+      }
+
+      .corral {
+          max-width: 350px;
+          height: auto;
+          width: -webkit-fill-available;
+      }
+
+      .clickable {
+          cursor: pointer;
+      }
+
+      .hidden-element {
+          position: absolute;
+          opacity: 0;
+      }
+
+      .shown-element {
+          position: inherit;
+          opacity: 1;
+          transition: opacity 0.8s linear;
+      }
+    </style>
+
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/progress.css" rel="stylesheet" />
+    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  </head>
+
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
+
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid px-0 px-sm-3">
+              <!-- Your content goes here -->
+              <div class="card">
+                <div
+                  class="overlay-dark bg"
+                  style="
+                    background-image: url('../../assets/images/course/modulo1/m1-4/shutterstock_728178127_1.jpg');
+                    background-position-y: 45%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    object-fit: cover;
+                  "
+                ></div>
+                <div class="card-block">
+                  <h1 class="card-title">
+                    <span class="badge badge-light">Tema 4</span>
+                    Practicando Python
+                  </h1>
+                  <div class="row mrg-top-10">
+                    <div class="col">
+                      <p>A continuación podrás practicar con algunos ejercicios de 
+                        programación. El objetivo de estos ejercicios es que sientas 
+                        más seguridad escribiendo código, por lo que no serán 
+                        calificados.
+                      </p>
+                      <p>
+                        No existe una sola manera de resolver cada ejercicio, tu puedes
+                        encontrar la solución que mejor te funcione a ti. Una vez que 
+                        hayas realizado el ejercicio, puedes consultar la solución 
+                        que nosotros encontramos para que <b>compares</b> ambas soluciones.
+                      </p>
+                      <p>
+                        Es normal si tienes algunas dudas, por lo que te recomendamos
+                        fuertemente visitar Google para solucionar cualquier pregunta
+                        que puedas encontrar. Los programadores utilizan Google todo
+                        el tiempo.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="card-info mb-3">
+                    <i class="icon ti-mouse-alt"></i>
+                    Haz clic en los botones para ver los ejercicios.
+                  </p>
+
+                  <!-- NAV PILLS INFO STARTS-->
+                <div class="pill-info">
+                  <ul class="nav nav-pills" style="display: flex; justify-content: center;" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio1"
+                        class="nav-link active"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 1</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio2"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 2</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio3"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 3</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio4"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 4</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio5"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 5</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio6"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 6</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio7"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 7</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#ejercicio8"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Ejercicio 8</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content" style="background-color: #F6F7FB; border-radius: 20px;padding-bottom: 1rem;">
+                    <!-- PANEL 1 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade in active"
+                      id="ejercicio1"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Define una función llamada <b>menorque()</b> 
+                            que reciba dos números enteros y nos indique
+                            cuál es el menor.
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-1"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 1 END -->
+                    <!-- PANEL 2 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio2"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Define una función llamada <b>num_max()</b> que 
+                            nos devuelva en pantalla el número mayor entre 3 
+                            números enteros diferentes. En caso de que sean 
+                            iguales imprime en pantalla el mensaje "Son 
+                            iguales".
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-2"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 2 END -->
+                    <!-- PANEL 3 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio3"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Define una función llamada <b>num_max_min()</b> 
+                            que nos devuelva el número mayor y el número 
+                            menor entre 3 números enteros diferentes. En 
+                            caso de que todos sean iguales imprime en 
+                            pantalla el mensaje "Son iguales".
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-3"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 3 END -->
+                    <!-- PANEL 4 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio4"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Define una función que devuelva <b>True</b> 
+                            si le damos una vocal <u>minúscula</u> y que
+                            devuelva <b>False</b> si le damos una vocal
+                            <u>mayúscula</u>.
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-4"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 4 END -->
+                    <!-- PANEL 5 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio5"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Define una función simple que no reciba <b>parámetros</b> 
+                            y sólo imprima en pantalla un mensaje.
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-5"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 5 END -->
+                    <!-- PANEL 6 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio6"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">                          <p>
+                            Define una función que reciba un número entero (
+                            la edad de una persona) que indique si una persona 
+                            es <b>mayor de edad</b> o <b>menor de edad</b>.
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-6"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 6 END -->
+                    <!-- PANEL 7 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio7"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Define una función que permita multiplicar los 
+                            números de una lista y sumar sus resultados.
+                          </p>
+                          <p>
+                            Para esto puedes investigar ¿qué es una lista
+                            en Python?
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-7"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 7 END -->
+                    <!-- PANEL 8 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="ejercicio8"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column p-2" style="margin: 0 auto;">
+                          <p>
+                            Imprime en pantalla la hora y fecha actual.
+                          </p>
+                          <div class="col-12 col-xl-6 text-center mx-auto">
+                            <button
+                              data-toggle="modal"
+                              data-target="#solucion-8"
+                              class="button"
+                            >
+                              Mostrar resultado
+                            </button>
+                          </div>
+                          <br/>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 8 END -->
+                  </div>
+                </div>
+                <!-- NAV PILLS INFO ENDS -->
+              </div>
+
+              <!--POP UPS START-->
+              <!-- RESULTADO 1 START -->
+              <div
+                class="modal fade"
+                id="solucion-1"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 1</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion1.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 1 END -->
+              <!-- RESULTADO 2 START -->
+              <div
+                class="modal fade"
+                id="solucion-2"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 2</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion2.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 2 END -->
+              <!-- RESULTADO 3 START -->
+              <div
+                class="modal fade"
+                id="solucion-3"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 3</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion3.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 3 END -->
+              <!-- RESULTADO 4 START -->
+              <div
+                class="modal fade"
+                id="solucion-4"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 4</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion4.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 4 END -->
+              <!-- RESULTADO 5 START -->
+              <div
+                class="modal fade"
+                id="solucion-5"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 5</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion5.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 5 END -->
+              <!-- RESULTADO 6 START -->
+              <div
+                class="modal fade"
+                id="solucion-6"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 6</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion6.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 6 END -->
+              <!-- RESULTADO 7 START -->
+              <div
+                class="modal fade"
+                id="solucion-7"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 7</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion7.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 7 END -->
+              <!-- RESULTADO 8 START -->
+              <div
+                class="modal fade"
+                id="solucion-8"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        <b>Solución Ejercicio 8</b>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="color: red;"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <img
+                            class="rounded"
+                            src="../../assets/images/course/modulo8/m8-6/solucion8.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESULTADO 8 END -->
+              <!--POP UPS END-->
+
+              <div class="alert alert-info col-11 col-sm-11 col-lg-6 ml-4">
+                <h4 class="card-title">
+                  <i class="fa fa-info-circle fa-2x"></i> &nbsp
+                  En la siguiente liga hay más ejercicios para  
+                  practicar:
+                </h4>
+                <ul>
+                  <li>
+                    <a href="https://unipython.com/ejercicios-del-curso-de-principiantes/" target="_blank" rel="noopener noreferrer">
+                      Curso de Python para principiantes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 8</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 17%"
+                      >
+                        17%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <script src="../../assets/js/progressbar.js"></script>
+    <script src="../../assets/js/progress-circle.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/progress/url-script.js"></script>
+
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+      show(0.07);
+    </script>
+
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+    <!-- Es posible hacer un archivo exclusivo de JS, aunque también lo es colocarlo aquí, es tu elección -->
+    <script src="../../assets/js/scripts/audio_player_basic.js"></script>
+
+    <!-- Necesario para el Ejemplo 3 -->
+    <script>
+      const build1 = "../../assets/images/course/modulo1/actividades/build_1.png"
+      const build2 = "../../assets/images/course/modulo1/actividades/build_2.png"
+      const build3 = "../../assets/images/course/modulo1/actividades/build_3.png"
+      const build4 = "../../assets/images/course/modulo1/actividades/build_4.png"
+      const builds = [build1, build2, build3, build4]
+          
+      function build(buildId){
+          const build = builds[buildId - 1]
+          const boxTextId = "text-" + buildId.toString()
+          const boxImageId = "build-" + buildId.toString()
+          let boxImage = document.getElementById(boxImageId)
+          let boxText = document.getElementById(boxTextId)
+      
+          boxImage.src = build
+          boxImage.classList.remove("clickable")
+      
+          boxText.classList.remove("hidden-text")
+          boxText.classList.add("shown-text")
+      }
+      
+      function openBox(id){
+          const boxId = "box-" + id.toString()
+          const buildId = "build-" + id.toString()
+          const textId = "text-" + id.toString()
+          const box = document.getElementById(boxId)
+          const build = document.getElementById(buildId)
+          const text = document.getElementById(textId)
+      
+          box.classList.add("hidden-element")
+      
+          build.classList.remove("hidden-element")
+          build.classList.add("shown-element")
+      
+          text.classList.remove("hidden-element")
+          text.classList.add("shown-element")
+      }
+    </script>
+  </body>
+</html>

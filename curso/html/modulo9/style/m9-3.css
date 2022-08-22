@@ -1,0 +1,94 @@
+   h3 {
+     color: #000;
+   }
+   .text{
+       /* color: #000; */
+       text-align: center;
+   }
+   
+   .folded-corner:hover .text{
+       visibility: visible;
+       color: #fff;;
+   }
+
+   .Services-tab{
+       margin-top:80px;
+   }
+   
+   /*
+     nav link items
+   */
+   .folded-corner{
+     padding: 60px 30px;
+     position: relative;
+     font-size: 100%;
+     text-decoration: none;
+     color: #999; 
+     background: transparent;
+     transition: all ease .5s;
+     border: 1px solid gray;
+   }
+
+   .folded-corner:hover{
+        color: #fff;
+        background-color: #093b8ba7;
+   }
+   
+   /*
+     paper fold corner
+   */
+   
+   .folded-corner:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     border-style: solid;
+     border-width: 0 0px 0px 0;
+     border-color: #ddd #000;
+     transition: all ease .3s;
+   }
+   
+   /*
+     on li hover make paper fold larger
+   */
+   .folded-corner:hover:before {
+        background-color: #D00003;
+        border-width: 0 50px 50px 0;
+        border-color: #eee #000;
+        color: #fff
+   }
+   
+   .service_tab_1{
+       background-color: #fff;
+   }
+   .service_tab_1:hover .fa-icon-image{
+       color: #fff;
+       transform:  scale(1.5);
+   }
+
+   .service_tab_1:hover .text{   
+        color: #fff;
+   }
+
+   .service_tab_1:hover .content{
+        color: #fff
+   }
+   
+   
+   .fa-icon-image{ 
+       color: #093B8B; 
+       display: inline-block; 
+       font-style: normal;
+       font-variant: normal;
+       font-weight: normal;
+       line-height: 1;
+       font-size-adjust: none;
+       font-stretch: normal;
+       text-rendering: auto;
+       transition: all .65s linear 0s;
+       text-align: center;
+       transition: all 1s cubic-bezier(.99,.82,.11,1.41);
+   }
+   
+   

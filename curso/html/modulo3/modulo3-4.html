@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>
+      Tema 3: Operadores lógicos y cómo te ayudan a la búsqueda de información |
+      CVA - Centro Virtual de Aprendizaje
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/css/modulos/modulo2/modulo2-3.css"
+    />
+
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/progress.css" rel="stylesheet" />
+    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  </head>
+
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
+
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid px-0 px-sm-3">
+              <!-- Your content goes here -->
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="image-container col-md-4">
+                        <div
+                          class="background-holder has-content"
+                          style="
+                            background-image: url('../../assets/images/course/modulo3/m3-4/operator.jpg');
+                            background-position: 40% 15%;
+                          "
+                        ></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8 ml-auto">
+                          <div class="card-block">
+                            <h1 class="mrg-btm-20 card-title">
+                              <span
+                                class="badge badge-light"
+                                style="font-size: 26px"
+                              >
+                                Tema 3: Operadores lógicos y cómo te ayudan a la
+                                búsqueda de información
+                              </span>
+                            </h1>
+
+                            <p>
+                              Este tema ayuda a la búsqueda de información y el
+                              tema anterior. Más que nada porque te permite
+                              agilizar cómo encontrar información específica que
+                              busques. Esto, por medio de limitar los artículos
+                              que te salen.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-block">
+                      <p class="card-info mb-3">
+                        <i class="icon ti-mouse-alt"></i> Haz clic en los
+                        cuadros para saber más de cada tipo de componente.
+                      </p>
+                      <!--Tarjeta con botones laterales START-->
+                      <div class="pill-info nav-vertical nav-stacked">
+                        <!--Botones laterales START-->
+                        <ul class="nav nav-pills" role="tablist">
+                          <li class="nav-item">
+                            <a
+                              href="#seccion-1"
+                              class="nav-link active"
+                              role="tab"
+                              data-toggle="tab"
+                              >Operadores booleanos o lógicos</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="#seccion-2"
+                              class="nav-link"
+                              role="tab"
+                              data-toggle="tab"
+                              >Operadores de proximidad</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="#seccion-3"
+                              class="nav-link"
+                              role="tab"
+                              data-toggle="tab"
+                              >Operadores de truncamiento</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="#seccion-4"
+                              class="nav-link"
+                              role="tab"
+                              data-toggle="tab"
+                              >Operadores relacionales</a
+                            >
+                          </li>
+                        </ul>
+                        <!--Botones laterales FIN-->
+
+                        <!--Contenido de tarjeta START-->
+                        <div class="tab-content">
+                          <!--Sección 1 START-->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade in active"
+                            id="seccion-1"
+                          >
+                            <div class="row">
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-horizon">
+                                    <div class="container-fluid">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <div class="card-block">
+                                            <h2 class="mrg-btm-20 card-title">
+                                              Operadores Booleanos o Lógicos
+                                            </h2>
+
+                                            <table
+                                              class="table table-responsive"
+                                            >
+                                              <thead class="table-secondary">
+                                                <th>Operador</th>
+                                                <th>Equivalente</th>
+                                                <th>Descripción</th>
+                                                <th>Ejemplos</th>
+                                              </thead>
+                                              <tr>
+                                                <th>AND</th>
+                                                <td>"y"</td>
+                                                <td>
+                                                  Localiza documentos que
+                                                  contengan todos los términos
+                                                  de búsqueda especificados.
+                                                </td>
+                                                <td>
+                                                  Flores AND Árboles (con Google
+                                                  el AND se sustituye por el
+                                                  signo + pegado al segundo
+                                                  término)
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th>OR</th>
+                                                <td>"o"</td>
+                                                <td>
+                                                  Localiza documentos que
+                                                  contengan cualquiera de los
+                                                  términos especificados.
+                                                </td>
+                                                <td>
+                                                  Flores OR Árboles (con Google
+                                                  el OR se sustituye por el
+                                                  signo - )
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th>NOT</th>
+                                                <td>no</td>
+                                                <td>
+                                                  Localiza documentos que
+                                                  contengan el primer término de
+                                                  búsqueda, pero no el segundo.
+                                                </td>
+                                                <td>Flores NOT Árboles</td>
+                                              </tr>
+                                              <tr>
+                                                <th>XOR</th>
+                                                <td></td>
+                                                <td>
+                                                  Localiza documentos que
+                                                  contengan cualquiera de los
+                                                  términos especificados, pero
+                                                  solo uno de ellos, no los dos.
+                                                </td>
+                                                <td>Flores XOR Árboles</td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Sección 1 FIN-->
+
+                          <!--Sección 2 START-->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="seccion-2"
+                          >
+                            <div class="row">
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-horizon">
+                                    <div class="container-fluid">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <div class="card-block">
+                                            <h2 class="mrg-btm-20 card-title">
+                                              Operadores de Proximidad
+                                            </h2>
+
+                                            <table
+                                              class="table table-responsive"
+                                            >
+                                              <thead class="table-secondary">
+                                                <th>Operador</th>
+                                                <th>Equivalente</th>
+                                                <th>Descripción</th>
+                                                <th>Ejemplos</th>
+                                              </thead>
+                                              <tr>
+                                                <th>WITH</th>
+                                                <td>"con"</td>
+                                                <td>
+                                                  Localiza documentos en los que
+                                                  una frase con todos los
+                                                  términos de búsqueda se
+                                                  encuentra en un campo del
+                                                  registro bibliográfico.
+                                                </td>
+                                                <td>
+                                                  Guadalajara WITH Historia
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th>SAME</th>
+                                                <td>"igual a"</td>
+                                                <td>
+                                                  Localiza documentos en los que
+                                                  todos los términos de búsqueda
+                                                  se encuentran dentro del mismo
+                                                  campo del registro
+                                                  bibliográfico, aunque no
+                                                  necesariamente en la misma
+                                                  frase.
+                                                </td>
+                                                <td>
+                                                  Guadalajara SAME Historia
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th>NEAR</th>
+                                                <td>"cerca de"</td>
+                                                <td>
+                                                  Localiza documentos en los que
+                                                  todos los términos de búsqueda
+                                                  están juntos en un mismo
+                                                  campo, sin embargo, el orden
+                                                  de los términos no
+                                                  necesariamente coinciden con
+                                                  el orden en que se hayan
+                                                  introducido.
+                                                </td>
+                                                <td>
+                                                  Guadalajara NEAR Historia
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th>ADJ</th>
+                                                <td></td>
+                                                <td>
+                                                  Localiza documentos en los que
+                                                  los términos de búsqueda están
+                                                  juntos y en el orden en que se
+                                                  hayan introducido en el campo
+                                                  de registro.
+                                                </td>
+                                                <td>
+                                                  Guadalajara ADJ Historia
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Sección 2 FIN-->
+
+                          <!--Sección 3 START-->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="seccion-3"
+                          >
+                            <div class="row">
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-horizon">
+                                    <div class="container-fluid">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <div class="card-block">
+                                            <h2 class="mrg-btm-20 card-title">
+                                              Operadores de Truncamiento
+                                            </h2>
+
+                                            <table
+                                              class="table table-responsive"
+                                            >
+                                              <thead class="table-secondary">
+                                                <th>Operador</th>
+                                                <th>Explicación</th>
+                                                <th>Ejemplo</th>
+                                              </thead>
+                                              <tr>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  ?
+                                                </th>
+                                                <td>
+                                                  Permite omitir una sola letra
+                                                  de un término de búsqueda
+                                                  tanto si es en el medio o al
+                                                  final de la palabra
+                                                </td>
+                                                <td>Valoración ? n</td>
+                                              </tr>
+                                              <tr>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  *
+                                                </th>
+                                                <td>
+                                                  Permite omitir una o varias
+                                                  letras de un término de
+                                                  búsqueda, así como variaciones
+                                                  de palabras con una misma raíz
+                                                </td>
+                                                <td>Univer*</td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Sección 3 FIN-->
+
+                          <!--Sección 4 START-->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="seccion-4"
+                          >
+                            <div class="row">
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-horizon">
+                                    <div class="container-fluid">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <div class="card-block">
+                                            <h2 class="mrg-btm-20 card-title">
+                                              Operadores Relacionales
+                                            </h2>
+                                            <table
+                                              class="table table-responsive"
+                                            >
+                                              <thead class="table-secondary">
+                                                <th>Nombre</th>
+                                                <th>Operador</th>
+                                              </thead>
+                                              <tr>
+                                                <th>Mayor que</th>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  >
+                                                </th>
+                                              </tr>
+                                              <tr>
+                                                <th>Menor que</th>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  <
+                                                </th>
+                                              </tr>
+                                              <tr>
+                                                <th>Diferente de</th>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  <>
+                                                </th>
+                                              </tr>
+                                              <tr>
+                                                <th>Igual A</th>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  =
+                                                </th>
+                                              </tr>
+                                              <tr>
+                                                <th>Mayor que o igual a</th>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  >=
+                                                </th>
+                                              </tr>
+                                              <tr>
+                                                <th>Menor que o igual a</th>
+                                                <th
+                                                  class="text-center font-size-15"
+                                                >
+                                                  <=
+                                                </th>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Sección 4 FIN-->
+                        </div>
+                        <!--Contenido de tarjeta FIN-->
+                      </div>
+                      <!--Tarjeta con botones laterales FIN-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card card-block">
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Esperamos que ya habiendo leído y conocido estos
+                        operadores lógicos puedas empezar a utilizarlos a la
+                        hora que tengas que investigar sobre algún tema en
+                        específico. Creemos que ya con estos conocimientos
+                        podrás empezar tu investigación o búsqueda de
+                        información de cualquier tema de interés. En el
+                        siguiente tema veremos más específicamente como poder
+                        identificar información útil.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card card-block">
+                    <h2 class="card-title">Recursos</h2>
+
+                    <h3>Sitios de Interés</h3>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://collegeinfogeek.com/best-calendar-app/"
+                          target="_blank"
+                          >https://collegeinfogeek.com/best-calendar-app/</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://medium.com/workit/how-to-use-a-digital-calendar-to-organize-your-life-in-a-fast-moving-world-8408a126b334"
+                          target="_blank"
+                          >https://medium.com/workit/how-to-use-a-digital-calendar-to-organize-your-life-in-a-fast-moving-world-8408a126b334</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 3</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 8%"
+                      >
+                        8%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <script src="../../assets/js/progressbar.js"></script>
+    <script src="../../assets/js/progress-circle.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/progress/url-script.js"></script>
+
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+      show(0.04);
+    </script>
+
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+  </body>
+</html>

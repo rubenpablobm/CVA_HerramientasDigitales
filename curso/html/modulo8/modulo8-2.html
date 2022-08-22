@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>Instalación de Python | CVA - Centro Virtual de Aprendizaje</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+    <link href="../../assets/css/hover-buttons.css" rel="stylesheet" />
+    <link href="../../assets/css/vocabulary.css" rel="stylesheet" />
+    <style rel="stylesheet" type="text/css">
+
+      .subtitle-accent {
+          font-weight: 700 !important;
+          margin-top: 1px;
+          color: #55a2fe !important;
+          font-size: 15px !important;
+      }
+
+      svg.fa-play-circle {
+          width: 4rem;
+          height: 4rem;
+          fill: var(--accent-color);
+      }
+
+      .box {
+          max-height: 180px;
+          height: auto;
+          width: auto;
+      }
+
+      .corral {
+          max-width: 350px;
+          height: auto;
+          width: -webkit-fill-available;
+      }
+
+      .clickable {
+          cursor: pointer;
+      }
+
+      .hidden-element {
+          position: absolute;
+          opacity: 0;
+      }
+
+      .shown-element {
+          position: inherit;
+          opacity: 1;
+          transition: opacity 0.8s linear;
+      }
+    </style>
+
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/progress.css" rel="stylesheet" />
+    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  </head>
+
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
+
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid px-0 px-sm-3">
+              <!-- Your content goes here -->
+              <div class="card">
+                <div
+                  class="overlay-dark bg"
+                  style="
+                    background-image: url('../../assets/images/course/modulo1/m1-4/shutterstock_728178127_1.jpg');
+                    background-position-y: 45%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    object-fit: cover;
+                  "
+                ></div>
+                <div class="card-block">
+                  <h1 class="card-title">
+                    <span class="badge badge-light">Tema 1</span>
+                    Instalación de Python
+                  </h1>
+                  <div class="row mrg-top-10">
+                    <div class="col">
+                      <p>
+                        Antes de comenzar a programar se requiere utilizar un 
+                        IDE. Un IDE, en inglés, significa <i>Integrated Development 
+                        Environment</i>. En español sería un <b>ambiente integrado 
+                        de desarrollo</b>, lo cual nos permitirá escribir nuestro 
+                        propio código y correrlo.
+                      </p>
+                      <p>
+                        El IDE que estaremos utiñizando es <b>Thonny</b>. Para 
+                        descargarglo necesitamos entrar a la siguiente página:
+                        <a href="https://thonny.org/" target="_blank" rel="noopener noreferrer">
+                          thonny.org
+                        </a>
+                        .
+                      </p>
+                    </div>
+                  </div>
+                  <p class="card-info mb-3">
+                    <i class="icon ti-mouse-alt"></i>
+                    Haz clic en los botones para ver las instrucciones.
+                  </p>
+
+                  <!-- NAV PILLS INFO STARTS-->
+                <div class="pill-info">
+                  <ul class="nav nav-pills" style="display: flex; justify-content: center;" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso1"
+                        class="nav-link active"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 1</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso2"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 2</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso3"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 3</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso4"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 4</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso5"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 5</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso6"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 6</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso7"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 7</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso8"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 8</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso9"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 9</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        style="border-color: #23806f;"
+                        href="#paso10"
+                        class="nav-link"
+                        role="tab"
+                        data-toggle="tab"
+                        >Paso 10</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content" style="background-color: #F6F7FB; border-radius: 20px;padding-bottom: 1rem;">
+                    <!-- PANEL 1 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade in active"
+                      id="paso1"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            En la página web hay una sección que dice <mark>“Download versión 
+                            3.3.13 for <u>Windows</u> <u>Mac</u> <u>Linux</u>”</mark>. 
+                            Dependiendo de tu sistema operativo, da click en la liga 
+                            correspondiente.
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso1.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 1 END -->
+                    <!-- PANEL 2 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso2"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div clas="col" style="margin: 0 auto;">
+                          <p>
+                            Correr el archivo una vez que termine de descargarse. 
+                            <br/>En <b>windows</b> debería de verse así:
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso2.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 2 END -->
+                    <!-- PANEL 3 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso3"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            Después de leer el acuerdo de la licencia, 
+                            da clic en “<b>next</b>” o "<b>siguiente</b>".
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso3.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 3 END -->
+                    <!-- PANEL 4 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso4"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            Se guardará el programa en su computadora de manera automática. 
+                            <br/>Da clic en “<b>next</b>” o "<b>siguiente</b>".
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso5.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 4 END -->
+                    <!-- PANEL 5 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso5"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            Esto permitirá que puedas abrir Tonny desde el 
+                            menú de inicio.
+                            <br/>Da clic en “<b>next</b>” o "<b>siguiente</b>".
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso5.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 5 END -->
+                    <!-- PANEL 6 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso6"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            Esto permitirá que puedas abrir Tonny desde el 
+                            tu escritorio. Si no quieres que la aplicación 
+                            aparezca en tu escritorio puedes dejar el recuadro
+                            en blanco.
+                            <br/>Da clic en “<b>next</b>” o "<b>siguiente</b>".
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso6.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 6 END -->
+                    <!-- PANEL 7 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso7"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            Finalmente estamos listos para instalar el 
+                            programa.
+                            <br/>Da clic en “<b>install</b>” o "<b>instalar</b>".
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso7.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 7 END -->
+                    <!-- PANEL 8 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso8"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="column" style="margin: 0 auto;">
+                          <p>
+                            Espera a que la instalación termine.
+                          </p>
+                          <br/>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso8.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 8 END -->
+                    <!-- PANEL 9 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso9"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            Felicidades, el programa se instaló con éxito.
+                            <br/>Da click en "<b>Finish</b>" o "<b>Terminar</b>"
+                          </p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso9.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 9 END -->
+                    <!-- PANEL 10 START -->
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade"
+                      id="paso10"
+                    >
+                      <div class="pdd-horizon-15 pdd-vertical-20">
+                        <div class="col" style="margin: 0 auto;">
+                          <p>
+                            La primera vez que habrá la aplicación le preguntará 
+                            por su idioma. Seleccione el que sea de su preferencia. 
+                            Los “<b>Initial settings</b>” se dejarán en “Standard”. 
+                            <br/>Ya teniendo eso, haga clic en “<b>Let's go!</b>”.
+                          </p>
+                          <p>¡Felicidades!. Ya puedes utilizar Thonny.</p>
+                          <div class="card col-8 mx-auto">
+                            <img 
+                              src="../../assets/images/course/modulo8/m8-2/Thonny-Paso10.png" 
+                              class="img-fluid rounded mx-auto" 
+                              alt="Imagen de la página Thonny.com"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- PANEL 10 END -->
+                  </div>
+                </div>
+                <!-- NAV PILLS INFO ENDS -->
+
+                </div>
+              </div>
+
+              
+
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 8</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 17%"
+                      >
+                        17%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <script src="../../assets/js/progressbar.js"></script>
+    <script src="../../assets/js/progress-circle.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/progress/url-script.js"></script>
+
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+      show(0.07);
+    </script>
+
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+    <!-- Es posible hacer un archivo exclusivo de JS, aunque también lo es colocarlo aquí, es tu elección -->
+    <script src="../../assets/js/scripts/audio_player_basic.js"></script>
+
+    <!-- Necesario para el Ejemplo 3 -->
+    <script>
+      const build1 = "../../assets/images/course/modulo1/actividades/build_1.png"
+      const build2 = "../../assets/images/course/modulo1/actividades/build_2.png"
+      const build3 = "../../assets/images/course/modulo1/actividades/build_3.png"
+      const build4 = "../../assets/images/course/modulo1/actividades/build_4.png"
+      const builds = [build1, build2, build3, build4]
+          
+      function build(buildId){
+          const build = builds[buildId - 1]
+          const boxTextId = "text-" + buildId.toString()
+          const boxImageId = "build-" + buildId.toString()
+          let boxImage = document.getElementById(boxImageId)
+          let boxText = document.getElementById(boxTextId)
+      
+          boxImage.src = build
+          boxImage.classList.remove("clickable")
+      
+          boxText.classList.remove("hidden-text")
+          boxText.classList.add("shown-text")
+      }
+      
+      function openBox(id){
+          const boxId = "box-" + id.toString()
+          const buildId = "build-" + id.toString()
+          const textId = "text-" + id.toString()
+          const box = document.getElementById(boxId)
+          const build = document.getElementById(buildId)
+          const text = document.getElementById(textId)
+      
+          box.classList.add("hidden-element")
+      
+          build.classList.remove("hidden-element")
+          build.classList.add("shown-element")
+      
+          text.classList.remove("hidden-element")
+          text.classList.add("shown-element")
+      }
+    </script>
+  </body>
+</html>

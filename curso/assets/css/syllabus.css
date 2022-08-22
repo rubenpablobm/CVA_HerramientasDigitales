@@ -1,0 +1,101 @@
+.week {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.row {
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+.empty {
+    box-shadow: none;
+}
+
+.empty:hover {
+    box-shadow: none !important;
+}
+
+.week:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.module .number {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    font-weight: normal;
+}
+
+.module .details {
+    font-size: 80%;
+    line-height: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 4px;
+    display: block;
+}
+
+.module {
+    width: 18%;
+    color: #f8f9fa;
+    min-height: 17rem;
+    background-size: cover;
+    background-position-x: right;
+}
+
+.module-details {
+    width: 82%;
+    padding: 3%;
+}
+
+.module-details .button{
+    padding: 1rem 2rem;
+}
+
+.module-details .title {
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    margin-bottom:10px;
+}
+
+.module-details .details {
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-weight: normal;
+    display: block;
+    color: #000;
+}
+
+.background-cover {
+  background-color: #4e4e4e80;
+  padding: 11%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1750px) {
+  .week {
+      width: 100%;
+  }
+  .empty {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .module {
+      display: none;
+  }
+  .module-details .title {
+    color: var(--theme-color);
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    display: block;
+}
+}

@@ -1,0 +1,77 @@
+.boton-palabra-full {
+  float: left;
+  /* margin-left: 10%; */
+  margin-bottom: 1%;
+  width: 100%;
+  height: fit-content;
+  font-size: 24px;
+  border-radius: 15px;
+  background-color: white;
+  border: 3px solid #daa520;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.boton-palabra-fit-content {
+  float: left;
+  /* margin-left: 10%; */
+  margin-bottom: 1%;
+  width: fit-content;
+  height: fit-content;
+  font-size: 24px;
+  border-radius: 15px;
+  background-color: white;
+  border: 3px solid #daa520;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.boton-palabra-full:hover {
+  cursor: pointer;
+  border-color: #55a2fe;
+}
+.boton-palabra-full:hover svg {
+  fill: #55a2fe;
+}
+
+.boton-palabra-fit-content:hover {
+  cursor: pointer;
+  border-color: #55a2fe;
+}
+.boton-palabra-fit-content:hover svg {
+  fill: #55a2fe;
+}
+
+#u01-palabra-1:hover span {
+  display: none;
+}
+
+#u01-palabra-1:hover:before {
+  content: "Yo";
+}
+
+#u01-palabra-2:hover span {
+  display: none;
+}
+
+#u01-palabra-2:hover:before {
+  content: "Tú";
+}
+
+#u01-palabra-3:hover span {
+  display: none;
+}
+
+#u01-palabra-3:hover:before {
+  content: "Él";
+}
+
+#u01-palabra-4:hover span {
+  display: none;
+}
+
+#u01-palabra-4:hover:before {
+  content: "Soy de Guadalajara.";
+}
