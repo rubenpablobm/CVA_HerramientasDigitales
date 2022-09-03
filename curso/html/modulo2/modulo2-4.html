@@ -28,10 +28,7 @@
     />
 
     <!-- page plugins css -->
-    <link
-      rel="stylesheet"
-      href="../../assets/css/modulos/modulo2/modulo2-3.css"
-    />
+    <link rel="stylesheet" href="./style/m2-4.css">
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -85,14 +82,10 @@
                             </h1>
 
                             <p>
-                              En este tema se verá una habilidad la cual te
-                              puede ayudar a complementar lo que viste en el
-                              tema anterior. Esto, porque te mostrará una
-                              habilidad la cual te ayudará a cumplir tus metas y
-                              otras diferentes actividades las cuales necesites
-                              realizar. Según “wordreference” multitarea
-                              significa la ejecución concurrente de dos o más
-                              trabajos o procesos al mismo tiempo.
+                              <i>"Multitasking˝</i> o "Multitareas" se refiere a la capacidad
+                              de poder hacer varias cosas al mismo tiempo. Hoy en día esta es una 
+                              habilidad valorada en muchos lados, pero también puede ser contraproducente
+                              pues se vuelve muy complicado.
                             </p>
                           </div>
                         </div>
@@ -105,63 +98,71 @@
               <div class="row">
                 <div class="col">
                   <div class="card card-block">
+
                     <p>
-                      A continuación, verás una tabla en la cual se muestran
-                      algunos pros y contras de ser multitareas:
+                      A continuación se muestran algunas ventajas y desventajas de 
+                      trabajar haciendo varias tareas a la vez:
                     </p>
 
-                    <div class="table-overflow m2-3-table">
-                      <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th class="bg-success">Ventajas</th>
-                            <th class="bg-danger">Desventajas</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Menor tiempo de trabajo</td>
-                            <td>Menor eficacia</td>
-                          </tr>
-                          <tr>
-                            <td>Incremento en productividad</td>
-                            <td>Puede empeorar tu memoria</td>
-                          </tr>
-                          <tr>
-                            <td>Mejor reacción a</td>
-                            <td>Mayor riesgo de errores</td>
-                          </tr>
-                          <tr>
-                            <td>Más responsabilidad</td>
-                            <td>Estres</td>
-                          </tr>
-                          <tr>
-                            <td>Más cosas en menos tiempo</td>
-                            <td>Mayor riesgo de déficit de atención</td>
-                          </tr>
-                          <tr>
-                            <td>Calidad de trabajo</td>
-                            <td>Menor calidad de trabajo</td>
-                          </tr>
-                          <tr>
-                            <td></td>
-                            <td>Menor rendimiento</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <!-- Pros y Cons START -->
+                    <div class="card-horizon mb-5">
+                      <div class="container">
+                        <div
+                          class="panel active"
+                          style="
+                            background-image: url(../../assets/images/course/modulo1/m1-1/shutterstock_400761526_1.jpg);
+                          "
+                        >
+                          <div class="panel-content">
+                            <div class="card-block">
+                              <h2>El concepto de los robots y el siglo XX</h2>
+                              <p>
+                                El concepto moderno comenzó a desarrollarse
+                                con el inicio de la Revolución Industrial, que
+                                permitió el uso de mecánicos complejos y la
+                                posterior introducción de electricidad. Esto
+                                hizo posible alimentar máquinas con pequeños
+                                motores compactos.
+                              </p>
+                              <p>
+                                A principios del siglo XX, se desarrolló la
+                                noción de una máquina humanoide. Hoy en día,
+                                uno puede imaginar robots de tamaño humano con
+                                la capacidad de pensamientos y movimientos
+                                casi humanos.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="panel"
+                          style="
+                            background-image: url(../../assets/images/course/modulo1/m1-1/shutterstock_400761526_1.jpg);
+                          "
+                        >
+                          <div class="panel-content">
+                            <div class="card-block">
+                              <h2>Isaac Asimov y sus reglas</h2>
+                              <p>
+                                <i
+                                  >En 1942 Asimov publicó las tres leyes de la
+                                  robótica:</i
+                                >
+                                <ol>
+                                  <li>Un robot no debe dañar a un ser humano ni, por su pasividad, dejar que un ser humano sufra daño.
+                                  </li>
+                                  <li>Un robot debe obedecer las órdenes que le son dadas por un ser humano, excepto cuando estas órdenes están en oposición con la primera Ley.
+                                  </li>
+                                  <li>Un robot debe proteger su propia existencia, hasta donde esta protección no esté en conflicto con la primera o segunda ley.
+                                  </li>
+                                </ol>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                    <p>
-                      Ser multitareas te puede traer un poco de problemas si no
-                      lo usas de manera correcta o lo intentas usar en
-                      situaciones en las cuales simplemente te hubiera ido mejor
-                      haciendo actividad por actividad en vez de hacer muchas a
-                      la vez. Algunos ejemplos de cuando no deberías hacer
-                      multitareas serían cuando tienes una entrega individual
-                      muy cercana, cuando no estás pudiendo hacer de manera
-                      satisfactoria alguna actividad o cuando estás haciendo una
-                      actividad la cual no tienes mucho conocimiento.
-                    </p>
+                    <!-- Pros y Cons END -->
 
                     <p>
                       Finalizando este módulo la verdad esperamos que hayas
@@ -268,6 +269,24 @@
     <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
     <script type="text/javascript">
       show(0.04);
+    </script>
+
+    <!-- Scripts para tarjetas comparativas -->
+    <script>
+      const panels = document.querySelectorAll(".panel");
+
+      panels.forEach((panel) => {
+        panel.addEventListener("click", () => {
+          removeActiveClasses();
+          panel.classList.add("active");
+        });
+      });
+
+      function removeActiveClasses() {
+        panels.forEach((panel) => {
+          panel.classList.remove("active");
+        });
+      }
     </script>
 
     <!-- endbuild -->
