@@ -5,12 +5,13 @@ https://bbbootstrap.com/snippets/bootstrap-5-flipping-cards-for-catalog-29291738
 
 .container{
     transform-style: preserve-3d;
+    font-size: 12px;
 }
 
 .container .box{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 20px;
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -25,6 +26,7 @@ https://bbbootstrap.com/snippets/bootstrap-5-flipping-cards-for-catalog-29291738
     height: 100%;
     transform-style: preserve-3d;
     transition: 0.9s ease;
+    font-size: 12px;
 }
 
 
@@ -66,12 +68,8 @@ https://bbbootstrap.com/snippets/bootstrap-5-flipping-cards-for-catalog-29291738
 .container .box .body .content div{
     transform-style: preserve-3d;
     padding: 20px;
-    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    background: linear-gradient(45deg, #083B8B,rgb(0, 166, 255));
     transform: translateZ(100px);
-}
-
-.container .box .body .content div h3{
-    letter-spacing: 1px;
 }
 
 .embed-responsive{
