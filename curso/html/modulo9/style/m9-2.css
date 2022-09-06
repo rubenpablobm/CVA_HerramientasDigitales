@@ -66,7 +66,7 @@ https://bbbootstrap.com/snippets/bootstrap-5-flipping-cards-for-catalog-29291738
 .container .box .body .content div{
     transform-style: preserve-3d;
     padding: 20px;
-    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    background: linear-gradient(45deg, #083B8B,rgb(0, 166, 255));
     transform: translateZ(100px);
 }
 
