@@ -57,6 +57,22 @@
     height: 500px;
 }
 
+#writer:hover {
+    height: 550px;
+}
+
+#calc:hover {
+    height: 520px;
+}
+
+#impress:hover {
+    height: 400px;
+}
+
+#draw:hover {
+    height: 380px;
+}
+
 @media (max-width: 330px){
     .container .card .imgContainer{
         left: -2px;
