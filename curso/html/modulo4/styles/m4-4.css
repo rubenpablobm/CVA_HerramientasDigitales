@@ -49,6 +49,14 @@
     transition-delay: 0.3s;
 }
 
+#googleSheets:hover{
+    height: 500px;
+}
+
+#googleForms:hover{
+    height: 500px;
+}
+
 @media (max-width: 330px){
     .container .card .imgContainer{
         left: -2px;
