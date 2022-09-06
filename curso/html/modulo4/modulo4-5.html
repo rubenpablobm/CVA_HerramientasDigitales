@@ -26,10 +26,7 @@
     />
 
     <!-- page plugins css -->
-    <link
-      rel="stylesheet"
-      href="../../assets/css/modulos/modulo2/modulo2-3.css"
-    />
+    <link rel="stylesheet" href="./styles/m4.css">
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -66,7 +63,7 @@
                         <div
                           class="background-holder has-content"
                           style="
-                            background-image: url('../../assets/images/course/modulo4/m4-5/open.jpg');
+                            background-image: url('../../assets/images/course/modulo4/m4-5/shutterstock_1886993512.jpeg');
                             background-position: 40% 15%;
                           "
                         ></div>
@@ -109,105 +106,114 @@
                       Las herramientas que puedes encontrar en LibreOffice son:
                     </p>
 
-                    <div class="table-overflow m2-3-table">
-                      <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th class="bg-info">Programa</th>
-                            <th class="bg-info">Funcionamiento</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><strong>LibreOffice Writer</strong></td>
-                            <td>
-                              Sería el equivalente a Microsoft Office Word, pero
-                              con una vista diferente la cual puedes modificar
-                              para que se vea igual a Word. Otra diferencia
-                              notable es que para poder usar las fuentes que
-                              puedes encontrar en Word los tienes que descargar
-                              aparte.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><strong>LibreOffice Calc</strong></td>
-                            <td>
-                              Equivalente a Microsoft Office Excel con los
-                              mismos problemas que writer más no poder correr un
-                              par de scripts que realmente no importan mucho, a
-                              menos que tengas algo de conocimiento de
-                              programación o quieres tener automatización.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <strong
-                                >LibreOffice Presentación de Impress</strong
-                              >
-                            </td>
-                            <td>
-                              Equivalente a Microsoft Office PowerPoint con
-                              prácticamente las mismas funcionalidades.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><strong>LibreOffice Dibujo de Draw</strong></td>
-                            <td>
-                              Programa que te sirve para hacer dibujos y
-                              diagramas. Similar a Dibujos de Google.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <strong>LibreOffice Fórmula de Math</strong>
-                            </td>
-                            <td>
-                              Te sirve para poner y evaluar tus fórmulas de
-                              matemáticas. (Algo importante no es compatible con
-                              LaTex)
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <div>
-                        <p>
-                          Cuenta además con una funcionalidad de base de datos,
-                          pero pensamos que puede ser complicado explicar como
-                          funciona una base de datos y como te podría ayudar
-                          cuando quisieras recolectar información. Finalmente
-                          esperamos que LibreOffice te pueda ayudar con alguna
-                          de las herramientas que provee.
-                        </p>
+                    <!-- TARJETAS START -->
+                    <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+                      <div class="card d-flex position-relative flex-column" id="writer">
+                        <div class='imgContainer'>
+                          <img src='../../assets/images/course/modulo4/m4-5/shutterstock_553811536.jpeg'>
+                        </div>
+                        <div class="content">
+                          <h2>LibreOffice Writer</h2>
+                          <p class="text-left">
+                            El equivalente a Word, pero
+                            con una vista diferente la cual puedes modificar
+                            para que se vea igual a Word. Otra diferencia
+                            notable es que para poder usar las fuentes que
+                            puedes encontrar en Word los tienes que descargar
+                            aparte.
+                          </p>
+                        </div>
                       </div>
+                      <div class="card d-flex position-relative flex-column" id="calc">
+                        <div class='imgContainer'>
+                          <img src='../../assets/images/course/modulo4/m4-5/shutterstock_1954891516.jpeg'>
+                        </div>
+                        <div class="content">
+                          <h2>LibreOffice Calc</h2>
+                          <p class="text-left">
+                            Equivalente a Excel con los
+                            mismos problemas que writer más no poder correr un
+                            par de scripts que realmente no importan mucho, a
+                            menos que tengas algo de conocimiento de
+                            programación o quieras automatizar procesos.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card d-flex position-relative flex-column" id="impress">
+                        <div class='imgContainer'>
+                          <img src='../../assets/images/course/modulo4/m4-5/shutterstock_1031044339.jpeg'>
+                        </div>
+                        <div class="content">
+                          <h2>LibreOffice Presentación de Impress</h2>
+                          <p class="text-left">
+                            Equivalente a PowerPoint con
+                            prácticamente las mismas funcionalidades.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card d-flex position-relative flex-column" id="draw">
+                        <div class='imgContainer'>
+                          <img src='../../assets/images/course/modulo4/m4-5/shutterstock_1866477742.jpeg'>
+                        </div>
+                        <div class="content">
+                          <h2>LibreOffice Dibujo de Draw</h2>
+                          <p class="text-left">
+                            Programa que te sirve para hacer dibujos y
+                            diagramas. Similar a Dibujos de Google.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card d-flex position-relative flex-column">
+                        <div class='imgContainer'>
+                          <img src='../../assets/images/course/modulo4/m4-5/shutterstock_1697077897.jpeg'>
+                        </div>
+                        <div class="content">
+                          <h2>LibreOffice Fórmula de Math</h2>
+                          <p class="text-left">
+                            Te sirve para poner y evaluar tus fórmulas de
+                            matemáticas. (Algo importante no es compatible con
+                            LaTex)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TARJETAS END -->
+                    <!-- Código de Anand Vunnam -->
+                    <!-- https://bbbootstrap.com/snippets/bootstrap-5-simple-card-hover-effects-50607616 -->
+                    
+                    <div>
+                      <p>
+                        Cuenta además con una funcionalidad de base de datos,
+                        pero pensamos que puede ser complicado explicar como
+                        funciona una base de datos y como te podría ayudar
+                        cuando quisieras recolectar información. Finalmente
+                        esperamos que LibreOffice te pueda ayudar con alguna
+                        de las herramientas que provee.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col">
-                  <div class="card card-block">
-                    <h2 class="card-title">Recursos</h2>
-
-                    <h3>Sitios de Interés</h3>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://wiki.documentfoundation.org/Feature_Comparison:_LibreOffice_-_Microsoft_Office"
-                          target="_blank"
-                          >https://wiki.documentfoundation.org/Feature_Comparison:_LibreOffice_-_Microsoft_Office</a
-                        >
-                      </li>
-                      <li>
-                        <a href="https://www.libreoffice.org" target="_blank"
-                          >https://www.libreoffice.org</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="alert alert-info col-11 col-sm-11 col-lg-6 ml-4">
+                <h3 class="card-title">
+                  <i class="fa fa-info-circle fa-2x"></i> &nbsp
+                  Para más información puedes visitar: 
+                </h3>
+                <ul>
+                  <li>
+                    <a href="https://wiki.documentfoundation.org/Feature_Comparison:_LibreOffice_-_Microsoft_Office" target="_blank" rel="noopener noreferrer">
+                      Feature Comparison: LibreOffice - Microsoft Office
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.libreoffice.org" target="_blank" rel="noopener noreferrer">
+                      LibreOffice - The Document Foundation
+                    </a>
+                  </li>
+                </ul>
               </div>
+
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
