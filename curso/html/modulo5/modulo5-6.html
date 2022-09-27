@@ -33,6 +33,35 @@
       href="../../assets/css/modulos/modulo2/modulo2-3.css"
     />
 
+    <!-- page plugins css -->
+    <style>
+      .carousel-item,
+      .carousel-inner {
+        max-height: 30% !important;
+      }
+    </style>
+    <!-- page plugins css 
+    CSS necesario para el carrusel-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Puedes editar los componentes del carrusel, para ello puedes checar
+    el siguiente link: https://kenwheeler.github.io/slick/ -->
+    <style>
+
+      .slick-dots li.slick-active button::before{
+        color: #23806f !important;
+      }
+
+      .slick-dots li button::before{
+        color: black !important;
+      }
+
+      .slick-prev::before, .slick-next::before{
+        color: #23806f !important;
+      }
+    </style>
+
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
     <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
@@ -107,14 +136,111 @@
                           cuestión:
                         </p>
 
-                        <ul class="list">
-                          <li>Crear un podcast</li>
-                          <li>Crear un programa de radio</li>
-                          <li>Crear libros de audio</li>
-                          <li>Practicar un discurso o presentación</li>
-                          <li>Hacer grabaciones de entrevistas</li>
-                          <li>Hacer un portafolio de notas de voz</li>
-                        </ul>
+                        <p class="card-info col-lg-5 mb-3">
+                          <i class="icon ti-mouse-alt"></i> Haz clic en las
+                          flechas para ver las imágenes.
+                        </p>
+
+                        <!-- Carousel Slider START -->
+                        <div class="carousel slider col-10" style="width: 90%; margin:auto">
+                          <div class="carousel-item active">
+                            <img
+                              class="d-block rounded"
+                              src="../../assets/images/course/modulo5/m5-6/shutterstock_1433456582.jpeg"
+                              alt="First slide"
+                            />
+                            <div
+                              class="carousel-caption d-md-block"
+                              style="
+                                background: rgba(232, 232, 238, 0.85);
+                                padding-right: 2%;
+                                padding-left: 2%;
+                              "
+                            >
+                              <h3>
+                                <b>Crear un podcast</b>
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              class="d-block rounded"
+                              src="../../assets/images/course/modulo5/m5-6/shutterstock_1054058906.jpeg"
+                              alt="Second slide"
+                            />
+                            <div
+                              class="carousel-caption d-block"
+                              style="
+                                background: rgba(232, 232, 238, 0.85);
+                                padding-right: 2%;
+                                padding-left: 2%;
+                              "
+                            >
+                              <h3>
+                                <b>Publicar audiolibros</b>
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              class="d-block rounded"
+                              src="../../assets/images/course/modulo5/m5-6/shutterstock_1777910231.jpeg"
+                              alt="Second slide"
+                            />
+                            <div
+                              class="carousel-caption d-block"
+                              style="
+                                background: rgba(232, 232, 238, 0.85);
+                                padding-right: 2%;
+                                padding-left: 2%;
+                              "
+                            >
+                              <h3>
+                                <b>Practicar un discurso o presentación</b>
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              class="d-block rounded"
+                              src="../../assets/images/course/modulo5/m5-6/shutterstock_2053737158.jpeg"
+                              alt="Second slide"
+                            />
+                            <div
+                              class="carousel-caption d-md-block"
+                              style="
+                                background: rgba(232, 232, 238, 0.85);
+                                padding-right: 2%;
+                                padding-left: 2%;
+                              "
+                            >
+                              <h2>
+                                <b>Grabar entrevistas</b>
+                              </h2>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              class="d-block rounded"
+                              src="../../assets/images/course/modulo5/m5-6/shutterstock_1976053862.jpeg"
+                              alt="Second slide"
+                            />
+                            <div
+                              class="carousel-caption d-none d-md-block"
+                              style="
+                                background: rgba(232, 232, 238, 0.85);
+                                padding-right: 2%;
+                                padding-left: 2%;
+                              "
+                            >
+                              <h2>
+                                <b>Recortar canciones</b>
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Carousel Slider END -->
+                        <br/>
 
                         <p>
                           Audacity es un programa sencillo de explicar y
@@ -134,47 +260,37 @@
                           su podcast de forma gratuita.
                         </p>
 
-                        <div class="centralizer mrg-top-20">
-                          <iframe
-                            width="100%"
-                            height="460px"
-                            src="https://www.youtube.com/embed/yn99DWSO6Is"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          ></iframe>
+                        <!-- VIDEO -->
+                        <h2 class="card-title">
+                          <i class="fa fa-play-circle-o fa-2x"></i> &nbsp
+                          Ve el siguiente video
+                        </h2>
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-lg-8 mx-auto">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yn99DWSO6Is" title="Cómo GRABAR un PODCAST en Audacity | Empezando a grabar un podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        <p class="col-12 col-lg-8 mx-auto text-secondary small">
+                          <!-- Fuente  -->
+                          Aural Mind Audio. (2021). Cómo GRABAR un PODCAST en Audacity | Empezando a grabar un podcast [YouTube Video]. In YouTube. https://www.youtube.com/watch?v=yn99DWSO6Is
+                        </p>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col">
-                  <div class="card card-block">
-                    <h2 class="card-title">Recursos</h2>
-
-                    <h3>Sitios de Interés</h3>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.makeuseof.com/tag/10-creative-audacity-havent-thought/"
-                          target="_blank"
-                          >https://www.makeuseof.com/tag/10-creative-audacity-havent-thought/</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=yn99DWSO6Is"
-                          target="_blank"
-                          >https://www.youtube.com/watch?v=yn99DWSO6Is</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="alert alert-info col-11 col-sm-11 col-lg-6 ml-4">
+                <h3 class="card-title">
+                  <i class="fa fa-info-circle fa-2x"></i> &nbsp
+                  Para más información puedes visitar: 
+                </h3>
+                <ul>
+                  <li>
+                    <a href="https://www.makeuseof.com/tag/10-creative-audacity-havent-thought/" target="_blank" rel="noopener noreferrer">
+                      12 Creative Uses for Audacity: Podcasts, Voiceovers, Ringtones, and More
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <div class="row mrg-btm-20">
@@ -256,5 +372,20 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <!-- Para carrusel -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <!-- Código necesario para el carrusel, checar la documentación en: 
+    https://kenwheeler.github.io/slick/ para más información -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".slider").slick({
+          infinite: false,
+          dots: true,
+          arrows: true
+        });
+      });
+    </script>
   </body>
 </html>
