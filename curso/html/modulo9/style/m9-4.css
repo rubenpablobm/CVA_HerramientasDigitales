@@ -10,9 +10,25 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
 }
-.container .card:hover
+#t1:hover
 {
-    height: 450px;
+    height: 380px;
+}
+#t2:hover
+{
+    height: 380px;
+}
+#t3:hover
+{
+    height: 380px;
+}
+#t4:hover
+{
+    height: 400px;
+}
+#t5:hover
+{
+    height: 410px;
 }
 .container .card .imgContainer
 {
