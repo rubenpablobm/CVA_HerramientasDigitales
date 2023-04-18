@@ -549,7 +549,9 @@ TABLET
 
   .move_btn.btn_left,
   .move_btn.btn_right {
-      display: none;
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
   }
 
   .quiz-card {
@@ -648,4 +650,17 @@ TABLET
     font-size: 0.8rem;
   }
 
+  .move_btn.btn_left,
+  .move_btn.btn_right {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .move_btn.btn_left,
+  .move_btn.btn_right {
+      display: none;
+  }
 }
