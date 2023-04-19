@@ -12,7 +12,551 @@
         <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
     
         <!-- plugins css -->
-        <link
+        <link<!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+            />
+            <title>Ejercicio | CVA - Centro Virtual de Aprendizaje</title>
+        
+            <!-- Favicon -->
+            <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+        
+            <!-- plugins css -->
+            <link
+              rel="stylesheet"
+              href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+            />
+            <link
+              rel="stylesheet"
+              href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+            />
+            <link
+              rel="stylesheet"
+              href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+            />
+        
+            <!-- page plugins css -->
+            <link href="../../assets/css/modulo1-32.css" rel="stylesheet">
+        
+            <!-- core css -->
+            <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+            <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+            <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+            <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+            <link href="../../assets/css/app.css" rel="stylesheet" />
+            <link href="../../assets/css/progress.css" rel="stylesheet" />
+            <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+          </head>
+        
+          <body class="header-info side-nav-dark">
+            <div class="app">
+              <div class="layout">
+                <!-- Side Nav START -->
+                <div class="side-nav" id="sideNav"></div>
+                <!-- Side Nav END -->
+        
+                <!-- Page Container START -->
+                <div class="page-container">
+                  <!-- Header START -->
+                  <div class="header navbar"></div>
+                  <!-- Header END -->
+        
+                  <!-- Content Wrapper START -->
+                  <div class="main-content">
+                    <div class="container-fluid px-0 px-sm-3">
+                      <!-- Your content goes here -->
+                      <div class="row">
+                        <div class="col">
+                          <div class="card">
+                            <div class="card-horizon">
+                              <div class="image-container col-md-5">
+                                <div
+                                  class="background-holder has-content"
+                                  style="
+                                    background-image: url('../../assets/images/course/modulo7/m7-6/shutterstock_618442457.jpeg');
+                                  "
+                                ></div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-7 ml-auto">
+                                  <div class="card-block">
+                                    <h1 class="mrg-btm-20 card-title">
+                                      <span class="badge badge-light">
+                                        Sistemas Operativos
+                                      </span><br/>
+                                      Ejercicio 1
+                                    </h1>
+                                    <p>
+                                      El ejercicio consiste de 10 preguntas con intentos 
+                                      ilimitados, opción múltiple y/o verdadero/falso. Se 
+                                      desplegará retroalimentación si la respuesta es correcta o 
+                                      incorrecta.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="modal-content m-5" style="width: auto; border-radius: 30px;">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">
+                            <p style="font-weight: bold; color: gray;">Autoevaluación</p>
+                          </h5>
+                        </div>
+                        <div class="col-md-8 px-5">
+                          <p class="card-info mb-3">
+                            <i class="icon ti-mouse-alt"></i> Lee detenidamente las preguntas y elige la opción correcta.
+                            Haz clic en cada en las flechas para cambiar de pregunta.
+                          </p>
+                        </div>
+                        <div class="modal-body" style="padding-top: 5px; display: flex; justify-content: center;">
+                          <div class="card" style="background-color: transparent; border: none;">
+                            <div class="card-horizon" style="width: fit-content;">
+        
+        
+                              <!-- Quiz Container START -->
+                              <div class="card card-2">
+                                <!-- Move Left Button START -->
+                                <button class="move_btn btn_left" onclick="previous_card()" disabled>&#8592;</button>
+                                <!-- Move Left Button END -->
+        
+                                <!-- QUIZ CARD 1 START -->
+                                <div class="quiz-card is-shown" id="card-1">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      1. ¿Todas las computadoras tienen un sistema de archivos?
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option correct">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 1 END -->
+        
+                                <!-- QUIZ CARD 2 START -->
+                                <div class="quiz-card" id="card-2">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      2. Los iPhones tienen el sistema operativo Android.
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option correct">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 2 END -->
+        
+                                <!-- QUIZ CARD 3 START -->
+                                <div class="quiz-card" id="card-3">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      3. ¿Cuál de las siguientes es una
+                                      extensión de archivos de video?
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option">
+                                      <p>a) .jpg</p>
+                                    </div>
+        
+                                    <div class="answer_options-option correct">
+                                      <p>b) .mp4</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>c) .mp3</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>d) .png</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 3 END -->
+        
+                                <!-- QUIZ CARD 4 START -->
+                                <div class="quiz-card" id="card-4">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      4. Las carpetas te ayudan a almacenar archivos en tu
+                                      computadora de manera ordenada.
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option correct">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 4 END -->
+        
+                                <!-- QUIZ CARD 5 START -->
+                                <div class="quiz-card" id="card-5">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      5. Ubunto es un sistema operativo de la familia Linux
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option correct">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 5 END -->
+        
+                                <!-- QUIZ CARD 6 START -->
+                                <div class="quiz-card" id="card-6">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      6. Apple es un sistema operativo.
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option correct">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 6 END -->
+        
+                                <!-- QUIZ CARD 7 START -->
+                                <div class="quiz-card" id="card-7">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      7. Un teclado pertenece a la categoría de software
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option correct">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 7 END -->
+        
+                                <!-- QUIZ CARD 8 START -->
+                                <div class="quiz-card" id="card-8">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      8. ¿Cuál NO es una función de los sistemas operativos?
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option">
+                                      <p>a) Es un enlace entre el hardware y el software</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>b) Contiene instrucciones para la computadora</p>
+                                    </div>
+        
+                                    <div class="answer_options-option correct">
+                                      <p>c) Es una tienda para comprar aplicaciones</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>d) Genera una interfaz visual con íconos y botones</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 8 END -->
+        
+                                <!-- QUIZ CARD 9 START -->
+                                <div class="quiz-card" id="card-9">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      9. ¿Cual NO es una extensión de archivos de imágenes?
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option">
+                                      <p>a) .png</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>b) .jpg</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>c) .svg</p>
+                                    </div>
+        
+                                    <div class="answer_options-option correct">
+                                      <p>d) .mp3</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 9 END -->
+        
+        
+                                <!-- QUIZ CARD 10 START -->
+                                <div class="quiz-card" id="card-10">
+                                  <div class="quiz-card-img">
+                                    <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title">
+                                      10. Los chips y circuitos de una computadora son 
+                                      parte del hardware.
+                                    </h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options">
+                                    <div class="answer_options-option correct">
+                                      <p>Verdadero</p>
+                                    </div>
+        
+                                    <div class="answer_options-option">
+                                      <p>Falso</p>
+                                    </div>
+        
+                                  </div>
+                                </div>
+                                <!-- QUIZ CARD 10 END -->
+        
+                                <!-- SCORE CARD START -->
+                                <div class="quiz-card" id="card-11">
+                                  <div class="quiz-card-img">
+                                    <div class="quiz-feedback feedback-100" style="display: none;">
+                                      <div class="score-circle">100%</div>
+                                    </div>
+                                    <div class="quiz-feedback feedback-70" style="display: none;">
+                                      <div class="score-circle"></div>
+                                    </div>
+                                    <div class="quiz-feedback feedback-60" style="display: none;">
+                                      <div class="score-circle"></div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="quiz-card-question">
+                                    <h2 class="card-title" style="display: none;">¡Felicidades!</h2>
+                                    <h2 class="card-title" style="display: none;">¡Bien hecho!</h2>
+                                    <h2 class="card-title" style="display: none;">¡Sigue Adelante!</h2>
+                                  </div>
+        
+                                  <div class="quiz-card-answer_options feedback_text">
+                                    <p style="display: none;">
+                                      Has obtenido la calificación más alta posible. Has logrado este logro por tu
+                                      comprensión
+                                      de las herramientas que serán vitales cuando se quiere utilizar a la innovación como
+                                      herramienta
+                                      para trascender en y con tu organización. Asimismo, has demostrado excelente comprensión
+                                      de conceptos
+                                      clave para poder innovar de forma sistémica y orientada.
+                                    </p>
+        
+                                    <p style="display: none;">
+                                      Buen trabajo, pero recuerda que ¡siempre se puede mejorar! ¡Gracias por tu esfuerzo!
+                                    </p>
+        
+                                    <p style="display: none;">
+                                      Recuerda que todo se puede mejorar. Te recomiendo volver a tomar el módulo, y que le des
+                                      una
+                                      leída al material recomendado cuando te sientas más cómodo/a seguro.
+        
+                                      <br>
+        
+                                      Gracias por tu esfuerzo, y recuerda que la mejora es continua y cíclica, incluso, en tu
+                                      preparación como profesional.
+                                    </p>
+                                  </div>
+        
+                                  <div class="feedback-btn-container">
+                                    <div>
+                                      <button class="feedback-btn" onclick="window.location.reload();">Retomar
+                                        autodiagnóstico</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- SCORE CARD END -->
+        
+                                <!-- Move Right Button START -->
+                                <button class="move_btn btn_right" onclick="next_card()">&#8594;</button>
+                                <!-- Move Right Button END -->
+                              </div>
+                              <!-- Quiz Container END-->
+        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="row mrg-btm-20">
+                        <div class="col text-center">
+                          <div class="btn-group"></div>
+                        </div>
+                      </div>
+        
+                      <div class="card widget-feed">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <h1 class="feed-title tag tag-info">Módulo 9</h1>
+                            <h3 class="feed-subtitle">Tu Progreso</h3>
+                            <div class="progress" style="height: 20px" id="bar">
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                style="max-width: 33%"
+                              >
+                                33%
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="row">
+                              <div class="col">
+                                <div id="circlecontainer"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col text-center">
+                                <h3 class="feed-subtitle">
+                                  Progreso General del Curso
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Content Wrapper END -->
+        
+                  <!-- Footer START -->
+                  <footer class="content-footer"></footer>
+                  <!-- Footer END -->
+                </div>
+                <!-- Page Container END -->
+              </div>
+            </div>
+        
+            <!-- build:js assets/js/vendor.js -->
+            <!-- plugins js -->
+            <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+            <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+            <script src="../../assets/js/recycled/navigationbar.js"></script>
+            <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="../../assets/vendors/PACE/pace.min.js"></script>
+            <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        
+            <script src="../../assets/js/progressbar.js"></script>
+            <script src="../../assets/js/progress-circle.js"></script>
+        
+            <!-- endbuild -->
+        
+            <!-- build:js assets/js/app.min.js -->
+            <!-- core js -->
+            <script src="../../assets/js/app.js"></script>
+            <script src="../../assets/js/progress/url-script.js"></script>
+        
+            <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+            <script type="text/javascript">
+              show(0.14);
+            </script>
+        
+            <!-- endbuild -->
+        
+            <!-- Insert your dependencies here -->
+            <script src="../../assets/js/scripts/centered-modal.js"></script>
+            <script src="../../assets/js/scripts/modulo1/ejercicios.js"></script>
+            
+          </body>
+        </html>
+        
           rel="stylesheet"
           href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
         />
