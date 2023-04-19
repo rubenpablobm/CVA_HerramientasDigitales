@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Ejercicio 1 | CVA - Centro Virtual de Aprendizaje</title>
+    <title>Lenguajes de Programación | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -26,7 +26,6 @@
     />
 
     <!-- page plugins css -->
-    <link href="../../assets/css/modulo1-32.css" rel="stylesheet">
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -55,34 +54,87 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
+
+              <div class="flechas mb-">
+                <!-- <div class="flechas"> -->
+                <!-- <div class="flecha-izquierda mb-0">
+                  <a href="../modulo1/modulo1-1.html" class="modulo-anterior">
+                    <i class="ei ei-left-arrow mr-2"></i>
+                    <span> Modulo Anterior</span>
+                  </a>
+                </div> -->
+                <div class="flecha-derecha mb-0">
+                  <a href="../modulo2/modulo2-1.html" class="modulo-siguiente">
+                    <span> Modulo Siguiente</span
+                    ><i class="ei ei-right-arrow ml-2"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-horizon">
+                  <div class="image-container col-md-4">
+                    <div
+                      class="background-holder has-content"
+                      style="
+                        background-image: url('../../assets/images/course/modulo7/m7-5/shutterstock_613324385.jpeg');
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                  </div>
+                  <div class="col-md-8 ml-auto">
+                    <div class="card-block">
+                      <h1 class="mrg-btm-20 card-title">
+                        <span class="badge badge-light" style="font-size: 22px">
+                          Tema 4
+                        </span>
+                        Lenguajes de Programación
+                      </h1>
+                      <p>
+                        Las computadoras no entienden palabras, piensan en 
+                        valores de prendido (1) o apagado (0), eso las hace muy 
+                        buenas resolviendo problemas complejos tan rápidamente. 
+                        Sin embargo, necesitan que una persona les de instrucciones 
+                        sobre lo que tienen que hacer. 
+                      </p>
+                      <p>
+                        Para las personas es muy dificil pensar en 0s y 1s, por eso 
+                        utilizamos lenguajes de programación. Los <b>lenguajes de 
+                        programación</b> nos ayudan a escribir instrucciones que la 
+                        <u>computadora</u> puede entender utilizando palabras que 
+                        <u>nosotros</u> podemos entender.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
               <div class="row">
                 <div class="col">
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="image-container col-md-5">
-                        <div
-                          class="background-holder has-content"
-                          style="
-                            background-image: url('../../assets/images/course/modulo7/m7-6/shutterstock_618442457.jpeg');
-                          "
-                        ></div>
+                  <div class="card mb-3 w-100">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../../assets/images/course/modulo7/m7-5/shutterstock_1447245065.jpeg" class="img-fluid rounded-start" alt="...">
                       </div>
-                      <div class="row">
-                        <div class="col-md-7 ml-auto">
-                          <div class="card-block">
-                            <h1 class="mrg-btm-20 card-title">
-                              <span class="badge badge-light">
-                                Introducción a la programación
-                              </span><br/>
-                              Ejercicio 1
-                            </h1>
-                            <p>
-                              El ejercicio consiste de 10 preguntas con intentos 
-                              ilimitados, opción múltiple y/o verdadero/falso. Se 
-                              desplegará retroalimentación si la respuesta es correcta o 
-                              incorrecta.
-                            </p>
-                          </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <p class="card-text">
+                            Hoy en día nos encontramos con una variedad 
+                            de lenguajes de programación como:
+                          </p>
+                          <ul>
+                            <li>Javascript</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                          </ul>
+                          <br/>
+                          <p>
+                            En el próximo módulo, veremos en profundidad 
+                            el lenguaje de programación Python, ya que es 
+                            un lenguaje bastante amigable para principiantes.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -90,392 +142,19 @@
                 </div>
               </div>
 
-              <div class="modal-content m-5" style="width: auto; border-radius: 30px;">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    <p style="font-weight: bold; color: gray;">Autoevaluación</p>
-                  </h5>
-                </div>
-                <div class="col-md-8 px-5">
-                  <p class="card-info mb-3">
-                    <i class="icon ti-mouse-alt"></i> Lee detenidamente las preguntas y elige la opción correcta.
-                    Haz clic en cada en las flechas para cambiar de pregunta.
-                  </p>
-                </div>
-                <div class="modal-body" style="padding-top: 5px; display: flex; justify-content: center;">
-                  <div class="card" style="background-color: transparent; border: none;">
-                    <div class="card-horizon" style="width: fit-content;">
-
-
-                      <!-- Quiz Container START -->
-                      <div class="card card-2">
-                        <!-- Move Left Button START -->
-                        <button class="move_btn btn_left" onclick="previous_card()" disabled>&#8592;</button>
-                        <!-- Move Left Button END -->
-
-                        <!-- QUIZ CARD 1 START -->
-                        <div class="quiz-card is-shown" id="card-1">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              1. ¿Python es un algoritmo?
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option">
-                              <p>a) Sí, Python es un algoritmo</p>
-                            </div>
-
-                            <div class="answer_options-option correct">
-                              <p>b) No, Python es un lenguaje de programación</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 1 END -->
-
-                        <!-- QUIZ CARD 2 START -->
-                        <div class="quiz-card" id="card-2">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              2. Una computadora endiente 0s y 1s solamente
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option correct">
-                              <p>Verdadero</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>Falso</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 2 END -->
-
-                        <!-- QUIZ CARD 3 START -->
-                        <div class="quiz-card" id="card-3">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              3. Todo input regresa un output.
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option correct">
-                              <p>Verdadero</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>Falso</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 3 END -->
-
-                        <!-- QUIZ CARD 4 START -->
-                        <div class="quiz-card" id="card-4">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              4. Tipos de datos booleanos regresan un valor numérico.
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option">
-                              <p>Verdadero</p>
-                            </div>
-
-                            <div class="answer_options-option correct">
-                              <p>Falso</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 4 END -->
-
-                        <!-- QUIZ CARD 5 START -->
-                        <div class="quiz-card" id="card-5">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              5. Operaciones aritméticas realizan cálculos sobre datos
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option correct">
-                              <p>Verdadero</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>Falso</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 5 END -->
-
-                        <!-- QUIZ CARD 6 START -->
-                        <div class="quiz-card" id="card-6">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              6. ¿Cuántos paradigmas de la programación había en el módulo?
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option">
-                              <p>a) 3</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>b) 4</p>
-                            </div>
-
-                            <div class="answer_options-option correct">
-                              <p>c) 5</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>d) 6</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 6 END -->
-
-                        <!-- QUIZ CARD 7 START -->
-                        <div class="quiz-card" id="card-7">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              7. ¿Qué es la programación?
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option">
-                              <p>a) Es el crear programas visuales en la computadora</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>b) Es el cómo armar una computadora</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>c) Es indicarle a la computadora los datos que debe reconocer</p>
-                            </div>
-
-                            <div class="answer_options-option correct">
-                              <p>d) Es indicarle a la computadora lo que tiene que hacer</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 7 END -->
-
-                        <!-- QUIZ CARD 8 START -->
-                        <div class="quiz-card" id="card-8">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              8. ¿Qué es un paradigma de la programación?
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option correct">
-                              <p>a) Es en sí una forma de clasificar los lenguajes de 
-                                programación por sus características</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>b) Conseguir algo de espacio para guardar cosas en 
-                                la nube</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>c) Es la forma en como la programación delimita 
-                                donde se puede hacer</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>d) Son las características de la programación</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 8 END -->
-
-                        <!-- QUIZ CARD 9 START -->
-                        <div class="quiz-card" id="card-9">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              9. ¿Dónde podemos encontrar la programación?
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option">
-                              <p>a) En las computadoras</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>b) En la tecnología</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>c) En las industrias</p>
-                            </div>
-
-                            <div class="answer_options-option correct">
-                              <p>d) Todas las anteriores</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 9 END -->
-
-
-                        <!-- QUIZ CARD 10 START -->
-                        <div class="quiz-card" id="card-10">
-                          <div class="quiz-card-img">
-                            <img src="../../assets/images/course/modulo1/m1-23/shutterstock_763347940_1.jpg" alt="">
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title">
-                              10. ¿Qué es el paradigma orientado a objetos?
-                            </h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options">
-                            <div class="answer_options-option">
-                              <p>a) Se basa en escuchar lo que emite un evento</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>b) Se basa en hacer uso de varios Paradigmas en 
-                                un Proyecto</p>
-                            </div>
-
-                            <div class="answer_options-option">
-                              <p>c) Se basa en dar solución a determinados problemas 
-                                dividiéndolos en partes pequeñas sin usar muchos 
-                                métodos recursivos</p>
-                            </div>
-
-                            <div class="answer_options-option correct">
-                              <p>d) La reutilización de código por medio de clases u objetos
-                                con características similares</p>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- QUIZ CARD 10 END -->
-
-                        <!-- SCORE CARD START -->
-                        <div class="quiz-card" id="card-11">
-                          <div class="quiz-card-img">
-                            <div class="quiz-feedback feedback-100" style="display: none;">
-                              <div class="score-circle">100%</div>
-                            </div>
-                            <div class="quiz-feedback feedback-70" style="display: none;">
-                              <div class="score-circle"></div>
-                            </div>
-                            <div class="quiz-feedback feedback-60" style="display: none;">
-                              <div class="score-circle"></div>
-                            </div>
-                          </div>
-
-                          <div class="quiz-card-question">
-                            <h2 class="card-title" style="display: none;">¡Felicidades!</h2>
-                            <h2 class="card-title" style="display: none;">¡Bien hecho!</h2>
-                            <h2 class="card-title" style="display: none;">¡Sigue Adelante!</h2>
-                          </div>
-
-                          <div class="quiz-card-answer_options feedback_text">
-                            <p style="display: none;">
-                              Has obtenido la calificación más alta posible. Has logrado este logro por tu
-                              comprensión
-                              de las herramientas que serán vitales cuando se quiere utilizar a la innovación como
-                              herramienta
-                              para trascender en y con tu organización. Asimismo, has demostrado excelente comprensión
-                              de conceptos
-                              clave para poder innovar de forma sistémica y orientada.
-                            </p>
-
-                            <p style="display: none;">
-                              Buen trabajo, pero recuerda que ¡siempre se puede mejorar! ¡Gracias por tu esfuerzo!
-                            </p>
-
-                            <p style="display: none;">
-                              Recuerda que todo se puede mejorar. Te recomiendo volver a tomar el módulo, y que le des
-                              una
-                              leída al material recomendado cuando te sientas más cómodo/a seguro.
-
-                              <br>
-
-                              Gracias por tu esfuerzo, y recuerda que la mejora es continua y cíclica, incluso, en tu
-                              preparación como profesional.
-                            </p>
-                          </div>
-
-                          <div class="feedback-btn-container">
-                            <div>
-                              <button class="feedback-btn" onclick="window.location.reload();">Retomar
-                                autodiagnóstico</button>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SCORE CARD END -->
-
-                        <!-- Move Right Button START -->
-                        <button class="move_btn btn_right" onclick="next_card()">&#8594;</button>
-                        <!-- Move Right Button END -->
-                      </div>
-                      <!-- Quiz Container END-->
-
-                    </div>
-                  </div>
-                </div>
+              <div class="alert alert-info col-11 col-sm-11 col-lg-6 mx-auto mx-sm-auto mx-md-4 mx-lg-4">
+                <div></div>
+                <h3 class="card-title">
+                  <i class="fa fa-info-circle fa-2x"></i> &nbsp
+                  Para más información visitar: 
+                </h3>
+                <ul>
+                  <li>
+                    <a href="https://keepcoding.io/blog/que-lenguaje-de-programacion-aprender-primero/#:~:text=Es%20evidente%20que%20uno%20de,y%20la%20tercera%20en%20TIOBE." target="_blank" rel="noopener noreferrer">
+                      ¿Qué lenguaje de programación aprender primero y por qué?
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <div class="row mrg-btm-20">
@@ -496,9 +175,9 @@
                         aria-valuenow="25"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="max-width: 33%"
+                        style="max-width: 4%"
                       >
-                        33%
+                        4%
                       </div>
                     </div>
                   </div>
@@ -551,14 +230,11 @@
 
     <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
     <script type="text/javascript">
-      show(0.14);
+      show(0.02);
     </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script src="../../assets/js/scripts/centered-modal.js"></script>
-    <script src="../../assets/js/scripts/modulo1/ejercicios.js"></script>
-
   </body>
 </html>
