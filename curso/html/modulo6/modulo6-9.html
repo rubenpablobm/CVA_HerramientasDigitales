@@ -1,4 +1,3 @@
-<!-- ../../assets/images/course/modulo6/m6-6/shutterstock_1676998303.jpeg -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -70,17 +69,11 @@
                       <div class="row">
                         <div class="col-md-7 ml-auto">
                           <div class="card-block">
-                            <h1 class="mrg-btm-20 card-title">
-                              <span class="badge badge-light">
-                                Aplicaciones de Videoconferencia
-                              </span><br/>
-                              Ejercicio 1
-                            </h1>
+                            <h1 class="mrg-btm-20 card-title">Ejercicio 1</h1>
+                            <!-- Eliminar instrucción cuando ya no sea necesaria -->
                             <p>
-                              El ejercicio consiste de 10 preguntas con intentos 
-                              ilimitados, opción múltiple y/o verdadero/falso. Se 
-                              desplegará retroalimentación si la respuesta es correcta o 
-                              incorrecta.
+                              Lee con atención cada enunciado y selecciona la
+                              opción correcta.
                             </p>
                           </div>
                         </div>
@@ -93,593 +86,105 @@
               <!-- card QUIZ -->
               <div class="card">
                 <div class="card-block">
-                  <div class="row">
-                    <!-- Columna izquierda de preguntas START -->
-                    <div class="col-md-6">
-                      <!-- Pregunta 1 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          1.	¿Es Zoom multiplataforma?
-                        </p>
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
+                  
+                  <div class="row justify-content-center" id="questions">
+                    <!-- DIV STICKY SCORECARD -->
+                    <div class="card d-flex p-2 mrg-top-10 w-100">
+                      <div class="submitbutton">
+                        <button
+                          type="button"
+                          data-toggle="modal"
+                          data-target="#modal-fs"
+                          class="button"
+                          onclick="checkAll()"
                         >
-                          Incorrecto. Zoom es multiplataforma.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Zoom es multiplataforma.
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton1"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton1"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 1 END -->
-
-                      <!-- Pregunta 2 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          2.	Zoom no es gratuito para uso personal.
-                        </p>
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Zoom cuenta con una versión gratuita para 
-                          uso personal.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Zoom cuenta con una versión gratuita para 
-                          uso personal.
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton2"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton2"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 2 END -->
-
-                      <!-- Pregunta 3 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          3.	Zoom no cuenta con planes para empresas.
-                        </p>
-
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Zoom si cuenta con planes/paquetes de paga para empresas.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Zoom sí cuenta con planes/paquetes de paga para 
-                          empresas.
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton3"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input  option correct"
-                            name="radiobutton3"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 3 END -->
-
-                      <!-- Pregunta 4 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          4.	Zoom se puede utilizar en iPhone y Android.
-                        </p>
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Zoom se puede utiliza en iPhone y Android, 
-                          ya que es una aplicación multiplataforma
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Zoom se puede utiliza en iPhone y Android, 
-                          ya que es una aplicación multiplataforma
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton4"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton4"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 4 END -->
-
-                      <!-- Pregunta 5 START -->
-                      <div class="question">
-                        <p clas="question-text">
-                          5. Es necesaria una cuenta de Zoom para unirse a una 
-                          llamada?.
-                        </p>
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Simplemente con el ID de la llamada y la 
-                          contraseña se pueden unir personas a una llamada. No 
-                          se requiere cuenta.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Simplemente con el ID de la llamada y la 
-                          contraseña se pueden unir personas a una llamada. No 
-                          se requiere cuenta.
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton5"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton5"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 5 END -->
-
-                      <!-- Pregunta 6 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          6. ¿Cual es el distintivo de Google meets en 
-                          comparación a otras aplicaciones de Videoconferencia?
-                        </p>
-
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Lee detenidamente y veras cuales son las 
-                          diferencias y similitudes de los diferentes servicios.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Efectivamente es la integración con los diferentes servicios que te ofrece Google.
-                        </p>
-                        <!-- opción 1 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton6"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >A. Videollamadas de tiempo ilimitado.</label
-                          >
-                        </div>
-                        <!-- opción 2 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton6"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >B. Espacio en la nube.</label
-                          >
-                        </div>
-                        <!-- opción 3 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton6"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A3"
-                            >C. Integración con el ecosistema de Google.</label
-                          >
-                        </div>
-                        <!-- opción 4 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton6"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A4"
-                            >D.	Todas las anteriores.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 6 END -->
-
-                    </div>
-                    <!-- Columna izquierda de preguntas END -->
-
-                    <!-- Columna derecha de preguntas START -->
-                    <div class="col-md-6">
-                      <!-- Pregunta 7 START -->
-                      <div class="question">
-                        <p clas="question-text">
-                          7.	Google meet no tiene una versión gratis: 
-                        </p>
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Lee detenidamente y verás que la respuesta 
-                          correcta es falso, Google meet sí cuenta con una versión 
-                          gratuita.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Efectivamente Google Meet cuenta con una versión 
-                          gratuita la cual te puede mostrar si de verdad quieres pagar 
-                          por las funcionalidades extra que te ofrece Google Workplace.
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton7"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton7"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 7 END -->
-
-                      <!-- Pregunta 8 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          8.	Algunos de los beneficios de pagar por Google 
-                          Workplace para añadir funcionalidad a Google Meet son:
-                        </p>
-
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Checa de nuevo la lectura para ver los 
-                          diferentes beneficios que te ofrece el pagar por Google 
-                          Workplace)
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Efectivamente los grupos de trabajo es un 
-                          beneficio que consigues al pagar Google Workplace los 
-                          demás vienen por defecto en la versión gratis.
-                        </p>
-                        <!-- opción 1 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton8"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >A. Grupos de trabajo.</label
-                          >
-                        </div>
-                        <!-- opción 2 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton8"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >B.	Conseguir algo de espacio para guardar cosas en 
-                            la nube.</label
-                          >
-                        </div>
-                        <!-- opción 3 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton8"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A3"
-                            >C.	Subtítulos instantáneos. </label
-                          >
-                        </div>
-                        <!-- opción 4 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton8"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A4"
-                            >D.	Todas las opciones </label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 8 END -->
-
-                      <!-- Pregunta 9 START -->
-                      <div class="question">
-                        <p clas="question-text">
-                          9.	¿Existe una versión de paga y una gratuita de Microsoft 
-                          Teams? 
-                        </p>
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Lee detenidamente y verás que sí cuenta con 
-                          ambas versiones una de paga y una gratis.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Efectivamente cuenta con ambas versiones para 
-                          que cheques tus necesidades y decidas si vas por una versión 
-                          sobre otra.
-                        </p>
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton9"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >Verdadero.</label
-                          >
-                        </div>
-
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton9"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >Falso.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 9 END -->
-
-                      <!-- Pregunta 10 START -->
-                      <div class="question">
-                        <p class="question-text">
-                          10.	¿Qué es Microsoft Teams?
-                        </p>
-
-                        <p
-                          class="alertWrong mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: red"
-                        >
-                          Incorrecto. Lee detenidamente otra vez la lectura para 
-                          que puedas refrescar tu memoria sobre Microsoft Teams.
-                        </p>
-                        <p
-                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                          style="display: none; color: green"
-                        >
-                          ¡Excelente! Efectivamente es una aplicación de colaboración 
-                          para que puedas organizarte con tus equipos.
-                        </p>
-                        <!-- opción 1 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton10"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A1"
-                            >A.	Una aplicación de videollamada hecha por Microsoft 
-                            la cual quiere competir solo con Google.</label
-                          >
-                        </div>
-                        <!-- opción 2 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton10"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A2"
-                            >B.	Una aplicación de videollamada hecha por Microsoft 
-                            en la cual solo hay versiones en línea.</label
-                          >
-                        </div>
-                        <!-- opción 3 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option"
-                            name="radiobutton10"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A3"
-                            >C.	Una aplicación de videollamada hecha por Microsoft 
-                            en la cual solo hay versiones de paga.</label
-                          >
-                        </div>
-                        <!-- opción 4 -->
-                        <div class="custom-control custom-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input option correct"
-                            name="radiobutton10"
-                          />
-                          <label class="custom-control-label" for="U13_Q1_A4"
-                            >D.	Una aplicación de colaboración creada para el trabajo 
-                            híbrido para que usted y su equipo estén informados, 
-                            organizados y conectados.</label
-                          >
-                        </div>
-                      </div>
-                      <!-- Pregunta 10 END -->
-
-                      <div>
-                        <!-- DIV STICKY SCORECARD -->
-                        <div
-                          class="card d-flex sticky-score p-2 mrg-top-10 w-100"
-                        >
-                          <div class="submitbutton">
-                            <button
-                              type="button"
-                              class="button"
-                              onclick="checkAll()"
-                            >
-                              Revisar
-                            </button>
-                          </div>
-                          <div class="score">
-                            <span></span>
-                          </div>
-                          <div class="msg">
-                            <span></span>
-                          </div>
-                        </div>
+                          Revisar
+                        </button>
                       </div>
                     </div>
-                    <!-- Columna derecha de preguntas END -->
+                  </div>
+                </div>
+                <!-- Columna derecha de preguntas END -->
+              </div>
+            </div>
+          </div>
+          <!-- card QUIZ -->
+
+          <div class="row mrg-btm-20">
+            <div class="col text-center">
+              <div class="btn-group"></div>
+            </div>
+          </div>
+
+          <div class="card widget-feed">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1 class="feed-title tag tag-info">Módulo 4</h1>
+                <h3 class="feed-subtitle">Tu Progreso</h3>
+                <div class="progress" style="height: 20px" id="bar">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="max-width: 33%"
+                  >
+                    33%
                   </div>
                 </div>
               </div>
-              <!-- card QUIZ -->
-
-              <div class="row mrg-btm-20">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
-
-              <div class="card widget-feed">
+              <div class="col-lg-4">
                 <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 6</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 33%"
-                      >
-                        33%
-                      </div>
-                    </div>
+                  <div class="col">
+                    <div id="circlecontainer"></div>
                   </div>
-                  <div class="col-lg-4">
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <h3 class="feed-subtitle">
+                      Progreso General del Curso
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <footer class="content-footer"></footer>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal-fs">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <a class="modal-close" href="" data-dismiss="modal" style="display: flex; justify-content: right;">
+                <i class="ti-close" style="color: red; font-weight: bolder; font-size: 22px;"></i>
+              </a>
+              <div class="vertical-align text-center">
+                <div class="table-cell">
+                  <div class="container">
                     <div class="row">
-                      <div class="col">
-                        <div id="circlecontainer"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
+                      <div class="col-lg-9 col-md-10 col-sm-12 mr-auto ml-auto">
+                        <div class="pdd-horizon-30 pdd-btm-50">
+                          <h1 class="mrg-btm-15 text-info" id="modal-score">
+                            0 / 100
+                          </h1>
+                          <h3 class="mrg-top-20" id="modal-message">...</h3>
+                          <img
+                            id="correct-img"
+                            class="img-responsive mrg-horizon-auto"
+                            src="../../assets/images/course/quiz/party.png"
+                            alt="Party img"
+                          />
+                          <img
+                            id="incorrect-img"
+                            class="img-responsive mrg-horizon-auto"
+                            src="../../assets/images/course/quiz/bored.png"
+                            alt="Problem solving img"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -687,15 +192,11 @@
               </div>
             </div>
           </div>
-          <!-- Content Wrapper END -->
-
-          <!-- Footer START -->
-          <footer class="content-footer"></footer>
-          <!-- Footer END -->
         </div>
-        <!-- Page Container END -->
       </div>
+      <!-- Content Wrapper END -->
     </div>
+    <!-- Page Container END -->
 
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
@@ -724,61 +225,7 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script>
-      $(".custom-control-label").on("click", function () {
-        if ($(this).siblings().is(":checked")) {
-          $(this).siblings().removeAttr("checked");
-        } else {
-          $(this).siblings().prop("checked", true);
-        }
-      });
-      //radio input "Correct" Class
-      function checkAll() {
-        var correct = 0;
-        var count = 0;
-        var passingGrade = 90;
-        $("div.question").each(function () {
-          count++;
-          var elem = $(this);
-          $(this).find(".alertCorrect").css("display", "none");
-          $(this).find(".alertWrong").css("display", "none");
-          $(this).removeClass("correct");
-          $(this).removeClass("incorrect");
-          var isCorrect = true;
-          $(this)
-            .find("input.custom-control-input")
-            .each(function () {
-              if ($(this).hasClass("correct")) {
-                if (!$(this).is(":checked")) {
-                  isCorrect = false;
-                }
-              } else {
-                if ($(this).is(":checked")) {
-                  isCorrect = false;
-                }
-              }
-            });
-          if (isCorrect == true) {
-            correct++;
-            $(this).find(".alertCorrect").css("display", "block");
-            $(this).addClass("correct");
-          } else {
-            $(this).find(".alertWrong").css("display", "block");
-            $(this).addClass("incorrect");
-          }
-        });
-        $(".score > span").html(
-          "Resultado: " + parseInt((correct * 100) / count) + "/100"
-        );
-        if (parseInt((correct * 100) / count) >= passingGrade) {
-          $(".msg > span").html("¡Excelente!");
-          $(".msg > span").css("color", "green");
-        } else if (parseInt((correct * 100) / count) <= 30) {
-          $(".msg > span").html(
-            "Te invitamos a regresar al contenido para tu aprendizaje."
-          );
-        }
-      }
-    </script>
+    <script src="./js/modulo6-9.js"></script>
+    <script src="../../assets/js/scripts/generales/centered-modal.js"></script>
   </body>
 </html>

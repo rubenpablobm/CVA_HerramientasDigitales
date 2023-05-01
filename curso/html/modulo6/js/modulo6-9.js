@@ -1,23 +1,21 @@
 var questions = [
   // 1
   {
-    text: `¿En qué tres aplicaciones principales consiste Microsoft Office?`,
+    text: `¿Zoom es multiplataforma?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 1,
+    correctIndex: 0,
     answers: [
-      `Outlook, Docs y Powerpoint`, 
-      `Word, Excel y Powerpoint`,
-      'Word, Pages y Excel',
-      'OneNote, Keynote y Word'
+      `Verdadero`, 
+      `Falso`,
     ],
   },
   // 2
   {
-    text: `¿Excel utiliza hojas de cálculo?`,
+    text: `Zoom no es gratuito para uso personal.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 0,
+    correctIndex: 1,
     answers: [
       'Verdadero',
       'Falso'
@@ -25,7 +23,7 @@ var questions = [
   },
   // 3
   {
-    text: `Word no es un programa para el procesamiento de texto.`,
+    text: `Zoom no cuenta con planes para empresas.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
@@ -36,7 +34,7 @@ var questions = [
   },
   // 4
   {
-    text: `Powerpoint es una aplicación para realizar presentaciones.`,
+    text: `Zoom se puede utilizar en iPhone y Android.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 0,
@@ -44,7 +42,7 @@ var questions = [
   },
   // 5
   {
-    text: `Microsoft Office tiene una versión en línea disponible gratuitamente.`,
+    text: `Es necesaria una cuenta de Zoom para unirse a una llamada?.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
@@ -52,49 +50,47 @@ var questions = [
   },
   // 6
   {
-    text: `¿Qué diferencia Google Workplace a Microsoft Office?`,
-    correctText: `¡Correcto!`,
-    incorrectText: `Incorrecto...`,
-    correctIndex: 1,
-    answers: [
-      `Google Workplace no tiene ninguna diferencia con Microsoft Office en cuanto a funcionalidades.`,
-      `Google Workplace es gratuito hasta cierto punto y contiene más herramientas que Microsoft Office no contiene.`,
-      'Google Workplace es en línea y Microsoft Office es lo mismo pero sin tener que tener una conexión a internet.',
-      'Google Workplace es gratis y de código abierto, y Microsoft Office cuesta y es un sistema centralizado.'
-    ],
-  },
-  // 7
-  {
-    text: `¿Cuánto espacio gratuito hay en la nube de Google para que puedas utilizar los diferentes programas de Google Workplace?`,
+    text: `¿Cual es el distintivo de Google meets en comparación a otras aplicaciones de Videoconferencia?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 2,
     answers: [
-      '45 Gb de espacio.',
-      '30 Gb de espacio.',
-      '15 Gb de espacio.',
-      '20 Gb de espacio.'
+      `Videollamadas de tiempo ilimitado.`,
+      `Espacio en la nube.`,
+      'Integración con el ecosistema de Google.',
+      'Todas las anteriores.'
     ],
   },
-  // 8
+  // 7
   {
-    text: `¿Qué es LibreOffice?`,
+    text: `Google meet no tiene una versión gratis. `,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
     answers: [
-      'Programa igual a Microsoft Office en el cual cobran.',
-      'Es un programa similar a Microsoft Office, pero hecho con código abierto y totalmente gratis.',
-      'Es un programa que solo funciona con linux, porque es de código abierto.',
-      'Es un programa que tiene la función de hacer encuestas.'
+      'Verdadero',
+      'Falso'
+    ],
+  },
+  // 8
+  {
+    text: `Algunos de los beneficios de pagar por Google Workplace para añadir funcionalidad a Google Meet son:`,
+    correctText: `¡Correcto!`,
+    incorrectText: `Incorrecto...`,
+    correctIndex: 0,
+    answers: [
+      'Grupos de trabajo.',
+      'Conseguir algo de espacio para guardar cosas en la nube',
+      'Subtítulos instantáneos.',
+      'Todas las opciones.'
     ],
   },
   // 9
   {
-    text: `LibreOffice está disponible gratuitamente.`,
+    text: `¿Existe una versión de paga y una gratuita de Microsoft Teams?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 1,
+    correctIndex: 0,
     answers: [
       'Verdadero',
       'Falso'
@@ -102,13 +98,15 @@ var questions = [
   },
   // 10
   {
-    text: `Google Workplace es uno de los programas que más herramientas te ofrece.`,
+    text: `¿Qué es Microsoft Teams?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 0,
+    correctIndex: 3,
     answers: [
-      'Verdadero',
-      'Falso'
+      'Una aplicación de videollamada hecha por Microsoft la cual quiere competir solo con Google.',
+      'Una aplicación de videollamada hecha por Microsoft en la cual solo hay versiones en línea.',
+      'Una aplicación de videollamada hecha por Microsoft en la cual solo hay versiones de paga.',
+      'Una aplicación de colaboración creada para el trabajo híbrido para que usted y su equipo estén informados, organizados y conectados.'
     ],
   },
 ];
