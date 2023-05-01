@@ -3,7 +3,7 @@ var questions = [
   {
     text: `¿En qué tres aplicaciones principales consiste Microsoft Office?`,
     correctText: `¡Correcto!`,
-    incorrectText: 'Incorrecto...',
+    incorrectText: `Incorrecto...`,
     correctIndex: 1,
     answers: [
       `Outlook, Docs y Powerpoint`, 
