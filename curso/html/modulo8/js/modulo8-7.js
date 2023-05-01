@@ -1,7 +1,7 @@
 var questions = [
   // 1
   {
-    text: `¿Zoom es multiplataforma?`,
+    text: `¿Es Python un lenguaje de programación?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 0,
@@ -12,7 +12,7 @@ var questions = [
   },
   // 2
   {
-    text: `Zoom no es gratuito para uso personal.`,
+    text: `Thonny es un lenguaje de programación.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
@@ -23,7 +23,7 @@ var questions = [
   },
   // 3
   {
-    text: `Zoom no cuenta con planes para empresas.`,
+    text: `Existe el tipo de dato de "palabra".`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
@@ -34,7 +34,7 @@ var questions = [
   },
   // 4
   {
-    text: `Zoom se puede utilizar en iPhone y Android.`,
+    text: `Valores booleanos regresan un valor falso o verdadero.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 0,
@@ -42,31 +42,29 @@ var questions = [
   },
   // 5
   {
-    text: `Es necesaria una cuenta de Zoom para unirse a una llamada?.`,
+    text: `La función print() despliega lo que está dentro de los paréntesis.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 1,
+    correctIndex: 0,
     answers: [`Verdadero`, `Falso`],
   },
   // 6
   {
-    text: `¿Cual es el distintivo de Google meets en comparación a otras aplicaciones de Videoconferencia?`,
+    text: `Python es el lenguaje de programación que se utiliza principalmente en Netflix.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 2,
+    correctIndex: 1,
     answers: [
-      `Videollamadas de tiempo ilimitado.`,
-      `Espacio en la nube.`,
-      'Integración con el ecosistema de Google.',
-      'Todas las anteriores.'
+      'Verdadero',
+      'Falso'
     ],
   },
   // 7
   {
-    text: `Google meet no tiene una versión gratis. `,
+    text: `Python es el lenguaje de programación que más se utiliza en Pinterest.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 1,
+    correctIndex: 0,
     answers: [
       'Verdadero',
       'Falso'
@@ -74,20 +72,7 @@ var questions = [
   },
   // 8
   {
-    text: `Algunos de los beneficios de pagar por Google Workplace para añadir funcionalidad a Google Meet son:`,
-    correctText: `¡Correcto!`,
-    incorrectText: `Incorrecto...`,
-    correctIndex: 0,
-    answers: [
-      'Grupos de trabajo.',
-      'Conseguir algo de espacio para guardar cosas en la nube',
-      'Subtítulos instantáneos.',
-      'Todas las opciones.'
-    ],
-  },
-  // 9
-  {
-    text: `¿Existe una versión de paga y una gratuita de Microsoft Teams?`,
+    text: `Python es un lenguaje de programación perfecto para mantener la eficiencia de una aplicación a través de los años, ya que es de fácil desarrollo, es muy simple de gestionar y soporta un gran volumen de visitas diarias, segun Instagram.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 0,
@@ -96,17 +81,28 @@ var questions = [
       'Falso'
     ],
   },
-  // 10
+  // 9
   {
-    text: `¿Qué es Microsoft Teams?`,
+    text: `¿Cómo se utiliza Python en Windows 10?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 3,
+    correctIndex: 2,
     answers: [
-      'Una aplicación de videollamada hecha por Microsoft la cual quiere competir solo con Google.',
-      'Una aplicación de videollamada hecha por Microsoft en la cual solo hay versiones en línea.',
-      'Una aplicación de videollamada hecha por Microsoft en la cual solo hay versiones de paga.',
-      'Una aplicación de colaboración creada para el trabajo híbrido para que usted y su equipo estén informados, organizados y conectados.'
+      'En la instalacion de aplicaciones.',
+      'En la organización de carpetas.',
+      'En la preinstalación asistida.',
+      'En la instalación de lenguajes.'
+    ],
+  },
+  // 10
+  {
+    text: `Uber combina otros lenguajes junto a Python:`,
+    correctText: `¡Correcto!`,
+    incorrectText: `Incorrecto...`,
+    correctIndex: 0,
+    answers: [
+      'Verdadero',
+      'Falso'
     ],
   },
 ];
