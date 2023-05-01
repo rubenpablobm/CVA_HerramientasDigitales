@@ -1,46 +1,42 @@
 var questions = [
   // 1
   {
-    text: `¿Qué es una meta?`,
+    text: `¿En qué tres aplicaciones principales consiste Microsoft Office?`,
     correctText: `¡Correcto! las metas son tus acciones o deseos en una dirección específica.`,
     incorrectText: `Incorrecto. Lee de nuevo el texto y verás que una meta no solo sirve en cosas específicas como proyectos y ambiciones si no como tal es tus acciones o deseos dirigidos hacia algo.`,
-    correctIndex: 3,
+    correctIndex: 1,
     answers: [
-      `Son con lo que avanzamos nuestros proyectos personales.`, 
-      `Son con lo que checamos el progreso de nuestras ambiciones.`,
-      'Son con lo que limitamos nuestras ambiciones.',
-      'El fin a que se dirigen las acciones o deseos de alguien.'
+      `Outlook, Docs y Powerpoint`, 
+      `Word, Excel y Powerpoint`,
+      'Word, Pages y Excel',
+      'OneNote, Keynote y Word'
     ],
   },
   // 2
   {
-    text: `¿Para qué sirven las metas?`,
+    text: `¿Excel utiliza hojas de cálculo?`,
     correctText: `¡Correcto! Efectivamente sirven para completar nuestros proyectos y ambiciones, los cuales pueden ser cualquier cosa desde mejorar un ámbito de tu vida, a conseguir algún reconocimiento, conseguir algún puesto, entre otras cosas que ya decidirás tú personalmente.`,
     incorrectText: `Incorrecto... Lee detenidamente de nuevo y verás que las metas como tal no son específicamente para completar tus trabajos del día a día o mejorar un aspecto en específico.`,
-    correctIndex: 2,
+    correctIndex: 0,
     answers: [
-      `Para mejorar como personas.`, 
-      `Para completar nuestro trabajo escolar o del día a día.`,
-      'Para completar nuestros proyectos personales y ambiciones.',
-      'Para mejorar y eficientizar como hacemos nuestros proyectos personales.'
+      'Verdadero',
+      'Falso'
     ],
   },
   // 3
   {
-    text: `¿Se puede dividir un proyecto en varias metas?`,
+    text: `Word no es un programa para el procesamiento de texto.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 0,
+    correctIndex: 1,
     answers: [
-      `La ejecución concurrente de dos o más trabajos o procesos al mismo tiempo.`, 
-      `Hacer dos o más metas al mismo tiempo.`,
-      'Buscar maximizar el tiempo haciendo más de una cosa a la vez.',
-      'Prevención de tiempos a la hora que se acerque la fecha de algún proyecto.'
+      'Verdadero',
+      'Falso'
     ],
   },
   // 4
   {
-    text: `¿Qué es el ser multitareas según “wordreference”?`,
+    text: `Powerpoint es una aplicación para realizar presentaciones.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 0,
@@ -48,7 +44,7 @@ var questions = [
   },
   // 5
   {
-    text: `¿Hacer multitareas es la forma más efectiva de hacer los trabajos todo el tiempo?`,
+    text: `Microsoft Office tiene una versión en línea disponible gratuitamente.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
@@ -56,56 +52,60 @@ var questions = [
   },
   // 6
   {
-    text: `¿Android, generalmente, cuenta con qué aplicación de calendario?`,
+    text: `¿Qué diferencia Google Workplace a Microsoft Office?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 0,
+    correctIndex: 1,
     answers: [
-      `Google Calendar`,
-      `Calendario de Apple`,
-      'Android Calendar',
-      'Windows Calendar'
+      `Google Workplace no tiene ninguna diferencia con Microsoft Office en cuanto a funcionalidades.`,
+      `Google Workplace es gratuito hasta cierto punto y contiene más herramientas que Microsoft Office no contiene.`,
+      'Google Workplace es en línea y Microsoft Office es lo mismo pero sin tener que tener una conexión a internet.',
+      'Google Workplace es gratis y de código abierto, y Microsoft Office cuesta y es un sistema centralizado.'
     ],
   },
   // 7
   {
-    text: `¿Pueden ser compartidos los calendarios digitales?`,
+    text: `¿Cuánto espacio gratuito hay en la nube de Google para que puedas utilizar los diferentes programas de Google Workplace?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 0,
+    correctIndex: 2,
     answers: [
-      `Verdadero`,
-      `Falso`,
+      '45 Gb de espacio.',
+      '30 Gb de espacio.',
+      '15 Gb de espacio.',
+      '20 Gb de espacio.'
     ],
   },
   // 8
   {
-    text: `¿Se pueden crear múltiples calendarios dentro de una aplicación de calendario?`,
+    text: `¿Qué es LibreOffice?`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 0,
+    correctIndex: 1,
     answers: [
-      `Verdadero`,
-      `Falso`,
+      'Programa igual a Microsoft Office en el cual cobran.',
+      'Es un programa similar a Microsoft Office, pero hecho con código abierto y totalmente gratis.',
+      'Es un programa que solo funciona con linux, porque es de código abierto.',
+      'Es un programa que tiene la función de hacer encuestas.'
     ],
   },
   // 9
   {
-    text: `No se puede añadir una ubicación a un evento de calendario.`,
+    text: `LibreOffice está disponible gratuitamente.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
     correctIndex: 1,
     answers: [
-      `Verdadero`,
-      `Falso`
+      'Verdadero',
+      'Falso'
     ],
   },
   // 10
   {
-    text: `Sincronizar no significa que si uno tiene múltiples dispositivos, lo mismo estará en cada uno de ellos.`,
+    text: `Google Workplace es uno de los programas que más herramientas te ofrece.`,
     correctText: `¡Correcto!`,
     incorrectText: `Incorrecto...`,
-    correctIndex: 1,
+    correctIndex: 0,
     answers: [
       'Verdadero',
       'Falso'
